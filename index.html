@@ -19,22 +19,6 @@
     <link rel="stylesheet" href="/portfolio/assets/index-f7bbcb38.css">
   </head>
   <body>
-    <div class="loader-overlay">
-  <span class="loader"></span>
-</div>
-
-<script>
-  // Apply the dark mode if it's saved in localStorage
-  (function() {
-    const savedMode = localStorage.getItem('color-mode');
-    if (savedMode === 'dark') {
-      document.body.classList.add('dark');
-      document.addEventListener('DOMContentLoaded', () => {
-        document.getElementById('mode-switcher').checked = true;
-      });
-    }
-  })();
-</script>
     <label class="switcher">
   <input type="checkbox" id="mode-switcher">
   <span class="slider"></span>
@@ -92,6 +76,20 @@
   <use href="/portfolio/assets/sprite-562c1d37.svg#icon-user"></use>
 </svg>
     <header></header>
+    <div class="loader-overlay">
+  <span class="loader"></span>
+</div>
+
+<script>
+  // Apply the dark mode if it's saved in localStorage
+  (function() {
+    const savedMode = localStorage.getItem('color-mode');
+    if (savedMode === 'dark') {
+      document.body.classList.add('dark');
+      document.getElementById('mode-switcher').checked = true;
+    }
+  })();
+</script>
 
     <main class="main">
       
