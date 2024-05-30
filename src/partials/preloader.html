@@ -8,9 +8,7 @@
     const savedMode = localStorage.getItem('color-mode');
     if (savedMode === 'dark') {
       document.body.classList.add('dark');
-      document.addEventListener('DOMContentLoaded', () => {
-        document.getElementById('mode-switcher').checked = true;
-      });
+      document.getElementById('mode-switcher').checked = true;
     }
   })();
 </script>
