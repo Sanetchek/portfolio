@@ -18,6 +18,8 @@
   --light-green: #bcdfd1;
   --light-bg: #f0f0f0;
   --dark-bg: #1e2023;
+  --transition-duration: 0.3s;
+  --transition-function: ease;
 }
 
 body {
@@ -97,7 +99,7 @@ a {
   transition: color 0.3s ease;
 }
 
-a:hover {
+a.link:hover {
   color: var(--green-text);
 }
 
@@ -116,7 +118,7 @@ img {
 }
 
 .container {
-  max-width: 320px;
+  max-width: 360px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -135,11 +137,6 @@ img {
 
 .spacer {
   margin-top: 80px;
-}
-
-svg.icon-arrow-up-right {
-  stroke: #000;
-  fill: transparent;
 }
 
 /* #region Preloader */
@@ -300,7 +297,7 @@ body.dark .loader::after {
   }
 
   .container {
-    max-width: 704px;
+    max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -350,7 +347,7 @@ body.dark .loader::after {
   }
 
   .container {
-    max-width: 1216px;
+    max-width: 1280px;
     padding-left: 32px;
     padding-right: 32px;
   }
