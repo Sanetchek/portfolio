@@ -142,6 +142,87 @@ svg.icon-arrow-up-right {
   fill: transparent;
 }
 
+/* #region Preloader */
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: var(--light-bg) url('../img/preloader/decor-bg-mobile.png') no-repeat right 20px top 20px / contain;
+}
+
+.loader-overlay.is-hidden {
+  display: none;
+}
+
+body.dark .loader-overlay {
+  background: var(--dark-bg) url('../img/preloader/decor-bg-mobile.png') no-repeat right 20px top 20px / contain;
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+  .loader-overlay {
+    background: var(--light-bg) url('../img/preloader/decor-bg-mobile-x2.png') no-repeat right 32px top 32px / contain;
+  }
+
+  body.dark .loader-overlay {
+    background: var(--dark-bg) url('../img/preloader/decor-bg-mobile-x2.png') no-repeat right 32px top 32px / contain;
+  }
+}
+
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  animation: rotate 1s linear infinite;
+}
+
+.loader::before, .loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  inset: 0px;
+  border-radius: 50%;
+  border: 5px solid var(--dark-bg);
+  animation: prixClipFix 2s linear infinite;
+}
+
+body.dark .loader::before, body.dark .loader::after {
+  border: 5px solid var(--light-bg);
+}
+
+.loader::after {
+  border-color: var(--green-text);
+  animation: prixClipFix 2s linear infinite , rotate 0.5s linear infinite reverse;
+  inset: 6px;
+}
+
+body.dark .loader::after {
+  border-color: var(--green-text);
+}
+
+@keyframes rotate {
+  0%   {transform: rotate(0deg)}
+  100%   {transform: rotate(360deg)}
+}
+
+@keyframes prixClipFix {
+  0%   {clip-path:polygon(50% 50%,0 0,0 0,0 0,0 0,0 0)}
+  25%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 0,100% 0,100% 0)}
+  50%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,100% 100%,100% 100%)}
+  75%  {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 100%)}
+  100% {clip-path:polygon(50% 50%,0 0,100% 0,100% 100%,0 100%,0 0)}
+}
+/* #endregion Preloader */
+
 /* #region Switcher */
 .switcher {
   position: relative;
@@ -224,6 +305,26 @@ svg.icon-arrow-up-right {
     padding-right: 32px;
   }
 
+  .loader-overlay {
+    background: var(--light-bg) url('../img/preloader/decor-bg-tablet.png') no-repeat right 32px top 32px / contain;
+  }
+
+  body.dark .loader-overlay {
+    background: var(--dark-bg) url('../img/preloader/decor-bg-tablet.png') no-repeat right 32px top 32px / contain;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    .loader-overlay {
+      background: var(--light-bg) url('../img/preloader/decor-bg-tablet-x2.png') no-repeat right 32px top 32px / contain;
+    }
+
+    body.dark .loader-overlay {
+      background: var(--dark-bg) url('../img/preloader/decor-bg-tablet-x2.png') no-repeat right 32px top 32px / contain;
+    }
+  }
+
   h1 {
     font-size: 136px;
     line-height: 1.14706;
@@ -252,5 +353,25 @@ svg.icon-arrow-up-right {
     max-width: 1216px;
     padding-left: 32px;
     padding-right: 32px;
+  }
+
+  .loader-overlay {
+    background: var(--light-bg) url('../img/preloader/decor-bg-desktop.png') no-repeat right 32px top 32px / contain;
+  }
+
+  body.dark .loader-overlay {
+    background: var(--dark-bg) url('../img/preloader/decor-bg-desktop.png') no-repeat right 32px top 32px / contain;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    .loader-overlay {
+      background: var(--light-bg) url('../img/preloader/decor-bg-desktop-x2.png') no-repeat right 32px top 32px / contain;
+    }
+
+    body.dark .loader-overlay {
+      background: var(--dark-bg) url('../img/preloader/decor-bg-desktop-x2.png') no-repeat right 32px top 32px / contain;
+    }
   }
 }
