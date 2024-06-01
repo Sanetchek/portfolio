@@ -74,7 +74,12 @@
   background-color: transparent;
   display: block;
 }
+.burger-icon {
+  fill: var(--dark-text);
+}
+
 .header-menu {
+  display: block;
   background-color: #f0f0f0;
   position: fixed;
   top: 0;
@@ -83,10 +88,18 @@
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  display: none;
   background-image: url(../img/preloader/decor-bg-mobile.png);
   background-repeat: no-repeat;
   background-position: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.header-menu.is-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
 }
 @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
@@ -132,7 +145,6 @@
   justify-content: center;
   align-items: center;
   border: none;
-  background-color: transparent;
 }
 .menu {
   width: 100%;
@@ -146,10 +158,10 @@
 .menu-nav {
   margin-top: 260px;
 }
-.is-open {
-  visibility: visible;
-  opacity: 1;
-  pointer-events: initial;
+
+.close-icon {
+  fill: transparent;
+  stroke: var(--dark-text);
 }
 
 @media screen and (min-width: 768px) {
