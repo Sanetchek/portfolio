@@ -17,12 +17,12 @@
     
     <script type="module" crossorigin src="/portfolio/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-bdb8a163.js">
-    <link rel="stylesheet" href="/portfolio/assets/index-3bee861f.css">
+    <link rel="stylesheet" href="/portfolio/assets/index-049278c1.css">
   </head>
   <body>
-    <div class="container">
+    <!-- <div class="container">
   <label class="switcher">
-    <input type="checkbox" id="mode-switcher">
+    <input type="checkbox" id="mode-switcher" />
     <span class="slider"></span>
   </label>
 
@@ -32,53 +32,151 @@
 
   <h3>Header 3</h3>
 
-  <p><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam repudiandae culpa, et cum exercitationem eveniet libero asperiores tempore voluptates iusto consequuntur magnam totam, nostrum veritatis. Molestiae distinctio voluptate odio quis!</span></p>
+  <p>
+    <span
+      >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
+      repudiandae culpa, et cum exercitationem eveniet libero asperiores tempore
+      voluptates iusto consequuntur magnam totam, nostrum veritatis. Molestiae
+      distinctio voluptate odio quis!</span
+    >
+  </p>
 
   <a href="#">Link to another page</a>
 
   <h3>Icons:</h3>
   <svg class="icon-arrow-right" width="24" height="24">
-    <use href="/portfolio/assets/sprite-9fd0b68e.svg#icon-arrow-right"></use>
+    <use href="./img/sprite.svg#icon-arrow-right"></use>
   </svg>
   <svg class="icon-arrow-up-right" width="24" height="24">
-    <use href="/portfolio/assets/sprite-9fd0b68e.svg#icon-arrow-up-right"></use>
+    <use href="./img/sprite.svg#icon-arrow-up-right"></use>
   </svg>
   <svg class="icon-brush" width="24" height="24">
-    <use href="/portfolio/assets/sprite-9fd0b68e.svg#icon-brush"></use>
+    <use href="./img/sprite.svg#icon-brush"></use>
   </svg>
   <svg class="icon-chat" width="24" height="24">
-    <use href="/portfolio/assets/sprite-9fd0b68e.svg#icon-chat"></use>
+    <use href="./img/sprite.svg#icon-chat"></use>
   </svg>
   <svg class="icon-drop-down" width="24" height="24">
-    <use href="/portfolio/assets/sprite-9fd0b68e.svg#icon-drop-down"></use>
+    <use href="./img/sprite.svg#icon-drop-down"></use>
   </svg>
   <svg class="icon-drop-up" width="24" height="24">
-    <use href="/portfolio/assets/sprite-9fd0b68e.svg#icon-drop-up"></use>
+    <use href="./img/sprite.svg#icon-drop-up"></use>
   </svg>
   <svg class="icon-hourglass" width="24" height="24">
-    <use href="/portfolio/assets/sprite-9fd0b68e.svg#icon-hourglass"></use>
+    <use href="./img/sprite.svg#icon-hourglass"></use>
   </svg>
   <svg class="icon-mail" width="24" height="24">
-    <use href="/portfolio/assets/sprite-9fd0b68e.svg#icon-mail"></use>
+    <use href="./img/sprite.svg#icon-mail"></use>
   </svg>
   <svg class="icon-phone" width="24" height="24">
-    <use href="/portfolio/assets/sprite-9fd0b68e.svg#icon-phone"></use>
+    <use href="./img/sprite.svg#icon-phone"></use>
   </svg>
   <svg class="icon-point" width="24" height="24">
-    <use href="/portfolio/assets/sprite-9fd0b68e.svg#icon-point"></use>
+    <use href="./img/sprite.svg#icon-point"></use>
   </svg>
   <svg class="icon-slide-left" width="24" height="24">
-    <use href="/portfolio/assets/sprite-9fd0b68e.svg#icon-slide-left"></use>
+    <use href="./img/sprite.svg#icon-slide-left"></use>
   </svg>
   <svg class="icon-slide-right" width="24" height="24">
-    <use href="/portfolio/assets/sprite-9fd0b68e.svg#icon-slide-right"></use>
+    <use href="./img/sprite.svg#icon-slide-right"></use>
   </svg>
   <svg class="icon-user" width="24" height="24">
-    <use href="/portfolio/assets/sprite-9fd0b68e.svg#icon-user"></use>
+    <use href="./img/sprite.svg#icon-user"></use>
   </svg>
 </div>
-    <header></header>
-    <div class="loader-overlay">
+ -->
+    <header id="header">
+  <div class="header">
+    <div class="container header-wrap">
+      <div class="header-container">
+        <a
+          class="logo-header"
+          href="https://sanetchek.github.io/portfolio/"
+          aria-label="Home"
+          >LLOYD<span>JEFFERSON</span></a
+        >
+        <nav class="menu-nav-tabl">
+          <ul class="menu-list">
+            <li id="menu_about" class="menu-list-item">
+              <a href="#about" aria-label="About section" class="menu-list-link"
+                >About me</a
+              >
+            </li>
+            <li id="menu_yachts" class="menu-list-item">
+              <a
+                href="#my-projects"
+                aria-label="Projects section"
+                class="menu-list-link"
+                >Projects</a
+              >
+            </li>
+            <li id="menu_review" class="menu-list-item">
+              <a
+                href="#contacts"
+                aria-label="Contacts section"
+                class="menu-list-link"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button type="button" class="open-menu-but">
+          <svg class="burger-icon" width="32" height="32">
+            <use href="../img/sprite.svg"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="header-menu">
+    <div class="container menu-wrap">
+      <div class="menu-nav-wrap">
+        <div class="menu">
+          <a
+            class="header-menu-logo"
+            href="https://sanetchek.github.io/portfolio/"
+            aria-label="Home"
+            >LLOYD<span>JEFFERSON</span></a
+          >
+          <button type="button" class="close-menu-but">
+            <svg class="close-icon" width="32" height="32">
+              <use href="/portfolio/assets/sprite-9fd0b68e.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <nav class="menu-nav">
+          <ul class="menu-list">
+            <li class="menu-list-item">
+              <a href="#about" aria-label="About section" class="menu-list-link"
+                >About me</a
+              >
+            </li>
+            <li class="menu-list-item">
+              <a
+                href="#my-projects"
+                aria-label="Yachts section"
+                class="menu-list-link"
+                >Projects</a
+              >
+            </li>
+            <li class="menu-list-item">
+              <a
+                href="#contacts"
+                aria-label="Review section"
+                class="menu-list-link"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+    <!-- <div class="loader-overlay">
   <span class="loader"></span>
 </div>
 
@@ -91,7 +189,7 @@
       document.getElementById('mode-switcher').checked = true;
     }
   })();
-</script>
+</script> -->
 
     <main class="main">
       
