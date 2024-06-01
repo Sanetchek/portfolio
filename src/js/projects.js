@@ -86,7 +86,7 @@ function getProjects(projectsObj) {
 function createProjectItem(projects) {
   return projects
     .map(
-      ({ name, number }) => `
+      ({ name, number, stack, link }) => `
     <li class="my-projects-list-item js-my-projects-list-item">
       <img
         class="my-projects-img"
@@ -103,10 +103,10 @@ function createProjectItem(projects) {
         alt="${ name }"
         width="320"
       />
-      <div class="my-projects-stack">React, JavaScript, Node JS, Git</div>
+      <div class="my-projects-stack">${ stack }</div>
       <div class="my-projects-name-link">
-        <div class="my-projects-name">${ name }</div>
-        <a class="my-projects-link" href="https://sanetchek.github.io/portfolio/" target="_blank">
+        <h3 class="my-projects-name">${ name }</h3>
+        <a class="my-projects-link" href="${ link }" target="_blank">
           Visit
           <svg class="my-projects-link-icon icon-arrow-up-right" width="24" height="24">
             <use href="./img/sprite.svg#icon-arrow-up-right"></use>

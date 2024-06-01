@@ -16,8 +16,8 @@
   margin-top: 40px;
 }
 
-.my-projects-list-item {
-}
+/*.my-projects-list-item {*/
+/*}*/
 
 .my-projects-img {
   display: block;
@@ -46,26 +46,15 @@ body.dark .my-projects-stack {
   margin-top: 16px;
 }
 
-.my-projects-name {
-  font-family: var(--popins), sans-serif;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: var(--dark-text);
-}
-
-body.dark .my-projects-name {
-  color: #f0f0f0;
-}
+/*.my-projects-name {*/
+/*}*/
 
 .my-projects-link {
   display: flex;
   align-items: center;
   gap: 12px;
 
-  font-family: var(--popins), sans-serif;
+  font-family: var(--popins);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -80,8 +69,7 @@ body.dark .my-projects-name {
   padding-left: 24px;
   padding-right: 24px;
 
-  transition: background-color var(--transition-duration)
-    var(--transition-function);
+  transition: background-color var(--transition-duration) var(--transition-function);
 
   align-self: flex-end;
   margin-top: 16px;
@@ -121,7 +109,7 @@ body.dark .my-projects-link:hover {
   background-color: rgba(0, 0, 0, 0);
   display: block;
 
-  font-family: var(--popins), sans-serif;
+  font-family: var(--popins);
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
