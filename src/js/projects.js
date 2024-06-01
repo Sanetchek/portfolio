@@ -1,41 +1,10 @@
-// Projects to load
-const projects = [
-  {
-    name: 'Power pulse webservice',
-    number: '4',
-    pageNum: 0,
-  },
-  {
-    name: 'Mimino website',
-    number: '5',
-    pageNum: 0,
-  },
-  {
-    name: 'Vyshyvanka vibes Landing Page',
-    number: '6',
-    pageNum: 0,
-  },
-  {
-    name: 'Chego jewelry website',
-    number: '7',
-    pageNum: 1,
-  },
-  {
-    name: 'Energy flow webservice',
-    number: '8',
-    pageNum: 1,
-  },
-  {
-    name: 'Fruitbox online store',
-    number: '9',
-    pageNum: 1,
-  },
-  {
-    name: 'Starlight studio landing page',
-    number: '10',
-    pageNum: 2,
-  },
-];
+import axios from 'axios';
+
+// Function to fetch projects from json file
+const fetchProjects = async filePath => {
+  const response = await axios.get(filePath);
+  return response.data;
+};
 
 // Define DOM elements
 const listEl = document.querySelector('.js-my-projects-list');
@@ -44,16 +13,28 @@ const loadMoreBtnEl = document.querySelector('.js-my-projects-load-more-btn');
 const lastProjectItemSelector = '.js-my-projects-list-item:last-child';
 
 // Define initial variables
+const projectsJsonFilePath = './my-projects.json';
 const perPage = 3;
 let currentPageNum = 0;
 let lastGalleryItemEl = getLastProjectsItemEL();
 let isNoProjectsToLoad = false;
+let projectsArr = [];
 
 // Define listeners
-const onLoadMoreBtnClick = function() {
-  const projectsToLoad = getProjects(projects);
+const onLoadMoreBtnClick = async () => {
 
-  if (!projectsToLoad) {
+  // To fetch projects once instead if each time on click
+  if (projectsArr.length === 0) {
+    try {
+      projectsArr = await fetchProjects(projectsJsonFilePath);
+    } catch (error) {
+      alert(error.message);
+    }
+  }
+
+  const projectsToLoad = getProjects(projectsArr);
+
+  if (!projectsToLoad || projectsToLoad.length === 0) {
     hideLoadMore();
     return;
   }
@@ -62,13 +43,19 @@ const onLoadMoreBtnClick = function() {
 
   listEl.insertAdjacentHTML('beforeend', markup);
 
-  window.scrollBy({
-    top: lastGalleryItemEl.getBoundingClientRect().bottom,
-    left: 0,
-    behavior: 'smooth',
-  });
+  // Need to correct getBoundingClientRect calculation after insertAdjacentHTML
+  setTimeout(function() {
 
-  lastGalleryItemEl = getLastProjectsItemEL();
+    window.scrollBy({
+      top: lastGalleryItemEl.getBoundingClientRect().bottom,
+      left: 0,
+      behavior: 'smooth',
+    });
+
+    lastGalleryItemEl = getLastProjectsItemEL();
+
+  }, 50);
+
 
   if (projectsToLoad.length < perPage) {
     isNoProjectsToLoad = true;
@@ -88,7 +75,9 @@ function getLastProjectsItemEL() {
 }
 
 function getProjects(projectsObj) {
-  let projects = projectsObj.filter(({ pageNum }) => pageNum === currentPageNum);
+  let projects = projectsObj.filter(
+    ({ pageNum }) => pageNum === currentPageNum,
+  );
   if (projects.length === 0) return false;
   currentPageNum += 1;
   return projects;
@@ -97,10 +86,7 @@ function getProjects(projectsObj) {
 function createProjectItem(projects) {
   return projects
     .map(
-      ({
-         name,
-         number,
-       }) => `
+      ({ name, number }) => `
     <li class="my-projects-list-item js-my-projects-list-item">
       <img
         class="my-projects-img"
@@ -116,7 +102,6 @@ function createProjectItem(projects) {
         src="./img/my-projects/my-projects-img--mobile--${ number }.jpg"
         alt="${ name }"
         width="320"
-        height="184"
       />
       <div class="my-projects-stack">React, JavaScript, Node JS, Git</div>
       <div class="my-projects-name-link">

@@ -17,7 +17,6 @@
 }
 
 .my-projects-list-item {
-
 }
 
 .my-projects-img {
@@ -38,7 +37,7 @@
 }
 
 body.dark .my-projects-stack {
-  color: #F0F0F0;
+  color: #f0f0f0;
 }
 
 .my-projects-name-link {
@@ -58,7 +57,7 @@ body.dark .my-projects-stack {
 }
 
 body.dark .my-projects-name {
-  color: #F0F0F0;
+  color: #f0f0f0;
 }
 
 .my-projects-link {
@@ -81,22 +80,23 @@ body.dark .my-projects-name {
   padding-left: 24px;
   padding-right: 24px;
 
-  transition: background-color var(--transition-duration) var(--transition-function);
+  transition: background-color var(--transition-duration)
+    var(--transition-function);
 
   align-self: flex-end;
   margin-top: 16px;
 }
 
 .my-projects-link:hover {
-  background-color: #BBBBBB;
+  background-color: #bbbbbb;
 }
 
 body.dark .my-projects-link {
-  background-color: #2A2D32;
+  background-color: #2a2d32;
 }
 
 body.dark .my-projects-link:hover {
-  background-color: #3B3F45;
+  background-color: #3b3f45;
 }
 
 .my-projects-link-icon {
@@ -139,7 +139,7 @@ body.dark .my-projects-link:hover {
 }
 
 body.dark .my-projects-load-more-btn {
-  color: #F0F0F0;
+  color: #f0f0f0;
 }
 
 .my-projects-load-more-btn-text {
@@ -153,7 +153,6 @@ body.dark .my-projects-load-more-btn:hover {
 }
 
 @media screen and (max-width: 359px) {
-
   .my-projects-title,
   .my-projects-name {
     word-wrap: break-word;
@@ -162,7 +161,6 @@ body.dark .my-projects-load-more-btn:hover {
 }
 
 @media screen and (min-width: 768px) {
-
   .my-projects-list {
     gap: 60px;
     margin-top: 60px;
@@ -195,7 +193,6 @@ body.dark .my-projects-load-more-btn:hover {
 }
 
 @media screen and (min-width: 1280px) {
-
   .my-projects-list {
     gap: 80px;
     margin-top: 80px;
