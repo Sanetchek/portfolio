@@ -34,7 +34,8 @@
 .menu-list {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  align-items: center;
+  gap: 24px;
 }
 .menu-list-link {
   color: #292929;
@@ -62,7 +63,89 @@
   background-color: transparent;
   display: block;
 }
-
+.open-menu-but {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  display: block;
+}
+.header-menu {
+  background-color: #f0f0f0;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: none;
+  background-image: url(../img/preloader/decor-bg-mobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .header-menu {
+    background-image: url(../img/preloader/decor-bg-mobile-x2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+.menu-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.header-menu-logo {
+  color: #292929;
+  font-family: Impact;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.header-menu-logo span {
+  color: #00b068;
+}
+.menu-nav-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+.close-menu-but {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+}
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 36px 20px;
+  border-radius: 8px;
+}
+.menu-nav {
+  margin-top: 260px;
+}
 .is-open {
   visibility: visible;
   opacity: 1;
@@ -86,7 +169,7 @@
 @media screen and (min-width: 1280px) {
 }
 
-@media screen and (min-device-pixel-ratio: 2),
+/* @media screen and (min-device-pixel-ratio: 2),
   (min-resolution: 2dppx),
   (min-resolution: 192dpi) {
   .header {
@@ -105,4 +188,4 @@
   .menu-social-icon:active {
     color: #14c57c;
   }
-}
+} */
