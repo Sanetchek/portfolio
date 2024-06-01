@@ -11,13 +11,14 @@
   height: 128px;
   padding: 40px 0;
   z-index: 1;
+  width: 100%;
 }
 .tech-skill-line {
   flex-shrink: 0;
   min-width: 100%;
   white-space: nowrap;
   animation-name: marqueeLine;
-  animation-duration: 8s;
+  animation-duration: 12s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   font-weight: 500;
@@ -32,9 +33,18 @@
   background-color: rgba(228, 229, 230, 1);
   height: 128px;
   padding: 40px 0;
-  transform: rotate(1deg);
+  transform: rotate(2deg);
+  width: 100%;
 }
-
+.geen-dot .icon-dot {
+  fill: var(--green-text);
+}
+.skill-item-other .tech-skill-line {
+  color: var(--green-text);
+}
+.skill-item-other .tech-skill-line {
+  animation-duration: 20s;
+}
 @keyframes marqueeLine {
   from {
     transform: translateX(0);
@@ -55,4 +65,9 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+@media screen and(min-width: 768px) {
+  .skill-item-other {
+    transform: rotate(1deg);
+  }
 }
