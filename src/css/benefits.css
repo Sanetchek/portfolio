@@ -4,6 +4,7 @@
     padding-right: 20px;
 }
 .title-benefits {
+    font-size: 52px;
     margin-bottom: 40px;
 }
 .span-benefits {
@@ -35,18 +36,26 @@ color: #00b068;
     #benefits {
     }
     .title-benefits {
+        font-size: 108px;
+        width: 704px;
+        padding: 0;
         margin-bottom: 0;
+        position: relative
     }
     .item-benefits {
         font-size:20px;
     }
     .benefits-common {
+        position: absolute;
+        top: 78%;
+        padding: 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 32px;
     }
     .benefits-width {
         grid-column: span 1;
+        width: 336px;
     }
     .benefits-width:first-child {
         grid-column: 2;
@@ -54,5 +63,43 @@ color: #00b068;
 }
 
 @media screen and (min-width: 1280px) {
+    .background-benefits {
+        width: 526px;
+        height: 408px;
+        background-image: url(../src/img/preloader/decor-bg-desktop.png);
+        background-size: cover;
+        background-position: center;
+        filter: blur(7.40168571472168px);
+    }
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi) {
+            .background-benefits {
+                background-image: url(../src/img/preloader/decor-bg-desktop-x2.png);
+            }
+        }
+    .benefits-common {
+        position: absolute;
+        top: 90%;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 32px;
+    }
+    
+    .benefits-width {
+        width: 384px;
+    }
+    .benefits-width:nth-child(1) {
+        grid-row: 1;
+        grid-column: 3;
+    }
 
+    .benefits-width:nth-child(2),
+    .benefits-width:nth-child(3),
+    .benefits-width:nth-child(4) {
+        grid-row: 2;
+        grid-column: span 1;
+    }
 }
