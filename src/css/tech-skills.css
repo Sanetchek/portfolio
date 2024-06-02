@@ -7,12 +7,16 @@
 }
 .skill-item {
   display: flex;
-  background-color: rgba(188, 223, 209, 1);
+  background-color: var(--light-green);
   height: 128px;
   padding: 40px 0;
   z-index: 1;
   width: 100%;
 }
+.dark .skill-item {
+  background-color: #214136;
+}
+
 .tech-skill-line {
   flex-shrink: 0;
   min-width: 100%;
@@ -28,19 +32,28 @@
   text-transform: uppercase;
   color: #000;
 }
+.dark .tech-skill-line {
+  color: var(--light-text);
+}
 .skill-item-other {
   display: flex;
-  background-color: rgba(228, 229, 230, 1);
+  background-color: var(--light-grey);
   height: 128px;
   padding: 40px 0;
   transform: rotate(2deg);
   width: 100%;
+}
+.dark .skill-item-other {
+  background-color: #2a2d32;
 }
 .geen-dot .icon-dot {
   fill: var(--green-text);
 }
 .skill-item-other .tech-skill-line {
   color: var(--green-text);
+}
+.dark .skill-item-other .icon-dot {
+  fill: var(--light-text);
 }
 .skill-item-other .tech-skill-line {
   animation-duration: 20s;
