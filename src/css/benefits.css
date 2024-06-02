@@ -34,21 +34,19 @@ color: #00b068;
 
 @media screen and (min-width: 768px) {
     #benefits {
+        padding-top: 124px;
     }
     .title-benefits {
         font-size: 108px;
         width: 704px;
         padding: 0;
         margin-bottom: 0;
-        position: relative
     }
     .item-benefits {
-        font-size:20px;
+        font-size: 20px;
     }
     .benefits-common {
-        position: absolute;
-        top: 78%;
-        padding: 0;
+        margin-top: -20px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 32px;
@@ -63,10 +61,20 @@ color: #00b068;
 }
 
 @media screen and (min-width: 1280px) {
+    #benefits {
+        padding-top: 164px;
+    }
+    .title-benefits {
+        position: relative;
+    
+    }
     .background-benefits {
+        position: absolute;
+        right: 32px;
+        top: 16px;
         width: 526px;
         height: 408px;
-        background-image: url(../src/img/preloader/decor-bg-desktop.png);
+        background-image: url(../img/benefits-img/backgr-min.png);
         background-size: cover;
         background-position: center;
         filter: blur(7.40168571472168px);
@@ -75,13 +83,12 @@ color: #00b068;
         (min-resolution: 2dppx),
         (min-resolution: 192dpi) {
             .background-benefits {
-                background-image: url(../src/img/preloader/decor-bg-desktop-x2.png);
+                background-image: url(../img/benefits-img/backgr\ 2x-min.png);
             }
         }
+    
     .benefits-common {
-        position: absolute;
-        top: 90%;
-        padding: 0;
+        margin-top: -90px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
