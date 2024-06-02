@@ -92,27 +92,10 @@
   </div>
 </header>
 
-<!-- 
-<label class="switcher">
-    <input type="checkbox" id="mode-switcher" />
-    <span class="slider"></span>
-  </label> -->
-
     <div class="loader-overlay">
   <span class="loader"></span>
 </div>
 
-<script>
-  // Apply the dark mode if it's saved in localStorage
-  const savedMode = localStorage.getItem('color-mode');
-  if (savedMode === 'dark') {
-    document.body.classList.add('dark');
-    const switcher = document.getElementById('mode-switcher');
-    if (switcher) {
-      switcher.checked = true;
-    }
-  }
-</script>
 
     <main class="main">
       
