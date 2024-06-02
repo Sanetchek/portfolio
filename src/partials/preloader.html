@@ -1,14 +1,3 @@
 <div class="loader-overlay">
   <span class="loader"></span>
 </div>
-
-<script>
-  // Apply the dark mode if it's saved in localStorage
-  (function() {
-    const savedMode = localStorage.getItem('color-mode');
-    if (savedMode === 'dark') {
-      document.body.classList.add('dark');
-      document.getElementById('mode-switcher').checked = true;
-    }
-  })();
-</script>
