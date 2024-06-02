@@ -118,15 +118,15 @@ prevButton.addEventListener('click', () => {
   swiper.slidePrev();
 });
 
-const bodySelector = document.querySelector('body');
 const swiperWrapper = document.querySelector('.swiper-wrapper');
 const toggleTheme = document.querySelector('.switcher');
 const swiperButtonNext = document.querySelector('.swiper-button-next');
 const swiperButtonPrev = document.querySelector('.swiper-button-prev');
 const swiperIconPrev = document.querySelector('.swiper-icon-prev');
 const swiperIconNext = document.querySelector('.swiper-icon-next');
+
 function addDarkTheme() {
-  if (bodySelector.classList.contains('dark')) {
+  if (window.localStorage.getItem('color-mode') === 'dark') {
     swiperWrapper.classList.add('dark');
     swiperButtonNext.classList.add('dark');
     swiperButtonPrev.classList.add('dark');
