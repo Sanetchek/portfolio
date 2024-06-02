@@ -20,83 +20,6 @@
     <link rel="stylesheet" href="/portfolio/assets/index-68535b07.css">
   </head>
   <body>
-    <!-- <div class="container">
-  <label class="switcher">
-    <input type="checkbox" id="mode-switcher" />
-    <span class="slider"></span>
-  </label>
-
-  <h1>Header 1</h1>
-
-  <h2>Header 2</h2>
-
-  <h3>Header 3</h3>
-
-  <p>
-    <span>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam
-      repudiandae culpa, et cum exercitationem eveniet libero asperiores tempore
-      voluptates iusto consequuntur magnam totam, nostrum veritatis. Molestiae
-      distinctio voluptate odio quis!
-    </span>
-  </p>
-
-  <a href="#">Link to another page</a>
-
-  <h3>Icons:</h3>
-  <svg class="icon-arrow-right" width="24" height="24">
-    <use href="./img/sprite.svg#icon-arrow-right"></use>
-  </svg>
-  <svg class="icon-arrow-up-right" width="24" height="24">
-    <use href="./img/sprite.svg#icon-arrow-up-right"></use>
-  </svg>
-  <svg class="icon-brush" width="24" height="24">
-    <use href="./img/sprite.svg#icon-brush"></use>
-  </svg>
-  <svg class="icon-chat" width="24" height="24">
-    <use href="./img/sprite.svg#icon-chat"></use>
-  </svg>
-  <svg class="icon-drop-down" width="24" height="24">
-    <use href="./img/sprite.svg#icon-drop-down"></use>
-  </svg>
-  <svg class="icon-drop-up" width="24" height="24">
-    <use href="./img/sprite.svg#icon-drop-up"></use>
-  </svg>
-  <svg class="icon-hourglass" width="24" height="24">
-    <use href="./img/sprite.svg#icon-hourglass"></use>
-  </svg>
-  <svg class="icon-mail" width="24" height="24">
-    <use href="./img/sprite.svg#icon-mail"></use>
-  </svg>
-  <svg class="icon-phone" width="24" height="24">
-    <use href="./img/sprite.svg#icon-phone"></use>
-  </svg>
-  <svg class="icon-point" width="24" height="24">
-    <use href="./img/sprite.svg#icon-point"></use>
-  </svg>
-  <svg class="icon-slide-left" width="24" height="24">
-    <use href="./img/sprite.svg#icon-slide-left"></use>
-  </svg>
-  <svg class="icon-slide-right" width="24" height="24">
-    <use href="./img/sprite.svg#icon-slide-right"></use>
-  </svg>
-  <svg class="icon-user" width="24" height="24">
-    <use href="./img/sprite.svg#icon-user"></use>
-  </svg>
-  <svg class="icon-success" width="24" height="24">
-    <use href="./img/sprite.svg#icon-success"></use>
-  </svg>
-  <svg class="icon-x" width="24" height="24">
-    <use href="./img/sprite.svg#icon-x"></use>
-  </svg>
-  <svg class="icon-menu" width="24" height="24">
-    <use href="./img/sprite.svg#icon-menu"></use>
-  </svg>
-  <svg class="icon-dot" width="24" height="24">
-    <use href="./img/sprite.svg#icon-dot"></use>
-  </svg>
-</div>
- -->
     <header id="header">
   <div class="header">
     <div class="container header-wrap">
@@ -194,13 +117,14 @@
 
 <script>
   // Apply the dark mode if it's saved in localStorage
-  (function() {
-    const savedMode = localStorage.getItem('color-mode');
-    if (savedMode === 'dark') {
-      document.body.classList.add('dark');
-      document.getElementById('mode-switcher').checked = true;
+  const savedMode = localStorage.getItem('color-mode');
+  if (savedMode === 'dark') {
+    document.body.classList.add('dark');
+    const switcher = document.getElementById('mode-switcher');
+    if (switcher) {
+      switcher.checked = true;
     }
-  })();
+  }
 </script>
 
     <main class="main">
