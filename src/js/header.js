@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const modeSwitcherBtn = document.getElementById('mode-switcher');
   const burgerBtn = document.getElementById('show-menu');
+  const closeBtn = document.getElementById('close-menu');
 
   if (modeSwitcherBtn) {
     // Site Color Mode Switcher
@@ -35,4 +36,16 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   burgerBtn.addEventListener('click', onOpenMobileMenu);
+
+  const onCloseMobileMenu = event => {
+    event.preventDefault();
+
+    const headerMenuEl = document.querySelector('.header-menu');
+
+    headerMenuEl.classList.remove('is-open');
+
+    document.body.style.overflow = 'inherit';
+  };
+
+  closeBtn.addEventListener('click', onCloseMobileMenu);
 });

@@ -1,6 +1,6 @@
 <header id="header">
   <div class="header">
-    <div class="container header-wrap">
+    <div class="header-wrap">
       <div class="header-container">
         <a
           class="logo-header"
@@ -10,6 +10,12 @@
         >
         <nav class="menu-nav-tabl">
           <ul class="menu-list">
+            <li>
+              <label class="switcher">
+                <input type="checkbox" id="mode-switcher" />
+                <span class="slider"></span>
+              </label>
+            </li>
             <li id="menu_about" class="menu-list-item">
               <a href="#about" aria-label="About section" class="menu-list-link"
                 >About me</a
@@ -44,13 +50,13 @@
   </div>
 
   <div class="header-menu">
-    <div class="container menu-wrap">
+    <div class="menu-wrap">
       <div class="menu-nav-wrap">
         <div class="menu">
           <a class="header-menu-logo" href="/portfolio/" aria-label="Home"
             >LLOYD<span>JEFFERSON</span></a
           >
-          <button type="button" class="close-menu-but">
+          <button type="button" class="close-menu-but" id="close-menu">
             <svg class="close-icon" width="32" height="32">
               <use href="../img/sprite.svg#icon-x"></use>
             </svg>
@@ -85,3 +91,9 @@
     </div>
   </div>
 </header>
+
+<!-- 
+<label class="switcher">
+    <input type="checkbox" id="mode-switcher" />
+    <span class="slider"></span>
+  </label> -->
