@@ -1,0 +1,160 @@
+@import 'swiper/css';
+@import 'izitoast/dist/css/iziToast.min.css';
+
+/* ------ MOBILE VERSION ------*/
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.reviews-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.swiper-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 32px;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-radius: 16px;
+  background-color: var(--light-grey);
+  height: 400px;
+  gap: 10px;
+}
+.swiper-author-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.swiper-author {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+}
+.swiper-button-wrapper {
+  display: flex;
+  gap: 16px;
+  align-self: flex-end;
+  margin-right: 1px;
+}
+.swiper-button-prev {
+  transform: rotate(180deg);
+}
+.swiper-button-prev,
+.swiper-button-next {
+  border: 1px solid rgba(41, 41, 41, 0.3);
+  border-radius: 8px;
+  padding: 12px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: inherit;
+}
+
+.swiper-button-prev:active,
+.swiper-button-next:active {
+  background-color: var(--light-grey);
+  outline: none;
+}
+.swiper-icon-prev,
+.swiper-icon-next {
+  stroke: #292929;
+  fill: #292929;
+}
+.swiper-button-prev:disabled .swiper-icon-prev,
+.swiper-button-next:disabled .swiper-icon-next {
+  stroke: #cccccc;
+  fill: #cccccc;
+  pointer-events: none;
+}
+.swiper-button-prev:disabled,
+.swiper-button-next:disabled {
+  border-color: rgba(41, 41, 41, 0.1);
+  pointer-events: none;
+}
+.error-massege {
+  margin: 0 auto;
+  padding: 0;
+  font-size: larger;
+  font-weight: 500;
+}
+/* ==== dark theme ====*/
+
+.swiper-wrapper.dark > .swiper-slide {
+  background-color: #2a2d32;
+}
+.swiper-button-prev.dark,
+.swiper-button-next.dark {
+  border-color: #2a2d32;
+}
+.swiper-button-prev.dark:disabled,
+.swiper-button-next.dark:disabled {
+  border-color: #2a2d32;
+}
+.swiper-button-prev.dark:active,
+.swiper-button-next.dark:active {
+  background-color: #3b3f45;
+}
+.swiper-button-prev.dark:disabled,
+.swiper-button-next.dark:disabled {
+  background-color: var(--dark-bg);
+}
+.swiper-icon-prev.dark,
+.swiper-icon-next.dark {
+  stroke: #f0f0f0;
+  fill: #f0f0f0;
+}
+.swiper-button-prev:disabled .swiper-icon-prev.dark,
+.swiper-button-next:disabled .swiper-icon-next.dark {
+  fill: #383a3d;
+  stroke: #383a3d;
+}
+
+/* ------ TABLET VERSION ------*/
+
+@media screen and (min-width: 768px) {
+  .swiper-slide {
+    height: 230px;
+    padding: 32px;
+  }
+  .reviews-title {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .swiper-button-prev:hover,
+  .swiper-button-next:hover {
+    background-color: var(--light-grey);
+    outline: none;
+  }
+  .swiper-button-prev:focus,
+  .swiper-button-next:focus {
+    border: 2px solid rgba(41, 41, 41, 0.3);
+    outline: none;
+  }
+  .swiper-button-prev.dark:hover,
+  .swiper-button-next.dark:hover {
+    background-color: #3b3f45;
+  }
+  .swiper-button-prev.dark:focus,
+  .swiper-button-next.dark:focus {
+    border: 2px solid #3b3f45;
+  }
+}
