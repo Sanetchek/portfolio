@@ -27,18 +27,17 @@
 .swiper-slide {
   display: flex;
   flex-direction: column;
-  padding: 20px 32px;
+  padding: 32px;
   align-items: flex-start;
-  justify-content: space-between;
   border-radius: 16px;
   background-color: var(--light-grey);
-  height: 400px;
-  gap: 10px;
+  height: 360px;
+  gap: 24px;
 }
 .swiper-author-wrapper {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 16px;
 }
 .swiper-author {
   font-weight: 600;
@@ -139,6 +138,10 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  .swiper-slide {
+    height: 248px;
+    justify-content: space-between;
+  }
   .swiper-button-prev:hover,
   .swiper-button-next:hover {
     background-color: var(--light-grey);

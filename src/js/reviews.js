@@ -67,17 +67,20 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 1,
       spaceBetween: 15,
       slidesPerGroup: 1,
+      autoHeight: true,
     },
     768: {
       slidesPerView: 1,
       spaceBetween: 15,
       slidesPerGroup: 1,
+      autoHeight: true,
     },
     1280: {
       slidesPerView: 2,
       spaceBetween: 32,
       allowTouchMove: false,
       slidesPerGroup: 2,
+      autoHeight: false,
     },
   },
   direction: 'horizontal',
@@ -89,7 +92,6 @@ const swiper = new Swiper('.swiper', {
     enabled: true,
     onlyInViewport: false,
   },
-  autoHeight: false,
   speed: 500,
   allowSlideNext: true,
   on: {
