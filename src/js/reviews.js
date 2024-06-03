@@ -7,13 +7,15 @@ const elementForMurkup = document.querySelector('.swiper-wrapper');
 const murkup = function (reviews) {
   const reviewsArray = [];
   reviews.forEach(review => {
-    reviewsArray.push(`<li class="swiper-slide">
-                <p class="swiper-text">${review.review}"</p>
-                <div class="swiper-author-wrapper">
-                <img class="swiper-image" src="${review.avatar_url}" alt="author image">
-                <p class="swiper-author">${review.author}</p>
-                </div>
-                </li>`);
+    reviewsArray.push(`
+      <li class="swiper-slide">
+        <p class="swiper-text">${review.review}"</p>
+        <div class="swiper-author-wrapper">
+          <img class="swiper-image" src="${review.avatar_url}" alt="author image">
+          <p class="swiper-author">${review.author}</p>
+        </div>
+      </li>`
+    );
   });
   return reviewsArray.join('');
 };
