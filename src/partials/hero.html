@@ -1,32 +1,56 @@
-<section class="hero">
-    <h1>Hello, I am <span class="green-text"> Fullstack developer </span></h1>
-    <p>I work with people all over the world to create <span class="green-text">impressive</span> and <span
+<section class="hero spacer">
+    <div class="container">
+        <div class="hero-text-content">
+        <h1 class="hero-title">Hello, I am
+            <picture>
+                <source srcset="../img/hero/hero-dt-1x.jpg 1x,
+                                ../img/hero/hero-dt-2x.jpg 2x,
+                                " media="(min-width: 1280px)" />
+                <img class="hero-foto" 
+                    src="../img/hero/hero-dt-1x.jpg" 
+                    alt="Lloyd Jefferson's photo" 
+                    width="108"
+                    height="108" />
+            </picture>
+            <br />
+            <span class="green-text"> Fullstack developer </span>
+        </h1>
+    </div>
+    <div class="hero-content-wrapper">  
+        <div class="hero-btn-wrapper">
+                <svg width="30" height="16" class="hero-btn-icon">
+                    <use href="../img/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+        <a href="#contacts" aria-label="Hero section" class="hero-button">
+            Order the project
+        </a>
+        </div>
+        <div class="hero-btn-style"></div>
+        <p class="hero-text">I work with people all over the world to create <span class="green-text">impressive</span> and <span
             class="green-text">functional
             websites</span> that reflect each client’s unique personality.</p>
-    <a href="#contacts" aria-label="Hero section" class="hero-button">
-        Order the project
-    </a>
-    <img>
-    <div class="hero-soc-link">
-        <ul>
-            <li class="hero-link">
-                <a href="https://www.instagram.com/goitclub/" target="_blank" aria-label="Instagram">Instagram
-                </a>
-            </li>
-            <li class="hero-link">
-                <a href="https://www.facebook.com/goITclub/" target="_blank" aria-label="Facebook">Facebook
-                </a>
-            </li>
-            <li class="hero-link">
-                <a href="https://www.linkedin.com/school/goit-start-your-career-in-it" target="_blank"
-                    aria-label="Linkedin">Linkedin
-                </a>
-            </li>
-            <li class="hero-link">
-                <a href="https://github.com/Sanetchek/portfolio" target="_blank" aria-label="GitHub">GitHub
-                </a>
-            </li>
-        </ul>
+       </div> 
+        
+            <div class="hero-soc-link">
+            <ul>
+                <li class="hero-link">
+                    <a href="https://www.instagram.com/goitclub/" target="_blank" aria-label="Instagram">Instagram
+                    </a>
+                </li>
+                <li class="hero-link">
+                    <a href="https://www.facebook.com/goITclub/" target="_blank" aria-label="Facebook">Facebook
+                    </a>
+                </li>
+                <li class="hero-link">
+                    <a href="https://www.linkedin.com/school/goit-start-your-career-in-it" target="_blank"
+                        aria-label="Linkedin">Linkedin
+                    </a>
+                </li>
+                <li class="hero-link">
+                    <a href="https://github.com/Sanetchek/portfolio" target="_blank" aria-label="GitHub">GitHub
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-
 </section>
