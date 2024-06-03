@@ -96,32 +96,32 @@
 }
 /* ==== dark theme ====*/
 
-.swiper-wrapper.dark > .swiper-slide {
+body.dark .swiper-slide {
   background-color: #2a2d32;
 }
-.swiper-button-prev.dark,
-.swiper-button-next.dark {
+body.dark .swiper-button-next,
+body.dark .swiper-button-prev {
   border-color: #2a2d32;
 }
-.swiper-button-prev.dark:disabled,
-.swiper-button-next.dark:disabled {
+body.dark .swiper-button-prev:disabled,
+body.dark .swiper-button-next:disabled {
   border-color: #2a2d32;
 }
-.swiper-button-prev.dark:active,
-.swiper-button-next.dark:active {
+body.dark .swiper-button-prev:active,
+body.dark .swiper-button-next:active {
   background-color: #3b3f45;
 }
-.swiper-button-prev.dark:disabled,
-.swiper-button-next.dark:disabled {
+body.dark .swiper-button-next:disabled,
+body.dark .swiper-button-prev:disabled {
   background-color: var(--dark-bg);
 }
-.swiper-icon-prev.dark,
-.swiper-icon-next.dark {
+body.dark .swiper-icon-prev,
+body.dark .swiper-icon-next {
   stroke: #f0f0f0;
   fill: #f0f0f0;
 }
-.swiper-button-prev:disabled .swiper-icon-prev.dark,
-.swiper-button-next:disabled .swiper-icon-next.dark {
+body.dark .swiper-button-prev:disabled .swiper-icon-prev,
+body.dark .swiper-button-next:disabled .swiper-icon-next {
   fill: #383a3d;
   stroke: #383a3d;
 }
@@ -152,12 +152,12 @@
     border: 2px solid rgba(41, 41, 41, 0.3);
     outline: none;
   }
-  .swiper-button-prev.dark:hover,
-  .swiper-button-next.dark:hover {
+  body.dark .swiper-button-prev:hover,
+  body.dark .swiper-button-next:hover {
     background-color: #3b3f45;
   }
-  .swiper-button-prev.dark:focus,
-  .swiper-button-next.dark:focus {
+  body.dark .swiper-button-prev:focus,
+  body.dark .swiper-button-next:focus {
     border: 2px solid #3b3f45;
   }
 }

@@ -117,31 +117,3 @@ nextButton.addEventListener('click', () => {
 prevButton.addEventListener('click', () => {
   swiper.slidePrev();
 });
-
-const bodySelector = document.querySelector('body');
-const swiperWrapper = document.querySelector('.swiper-wrapper');
-const toggleTheme = document.querySelector('.switcher');
-const swiperButtonNext = document.querySelector('.swiper-button-next');
-const swiperButtonPrev = document.querySelector('.swiper-button-prev');
-const swiperIconPrev = document.querySelector('.swiper-icon-prev');
-const swiperIconNext = document.querySelector('.swiper-icon-next');
-function addDarkTheme() {
-  if (bodySelector.classList.contains('dark')) {
-    swiperWrapper.classList.add('dark');
-    swiperButtonNext.classList.add('dark');
-    swiperButtonPrev.classList.add('dark');
-    swiperIconPrev.classList.add('dark');
-    swiperIconNext.classList.add('dark');
-  } else {
-    swiperWrapper.classList.remove('dark');
-    swiperButtonNext.classList.remove('dark');
-    swiperButtonPrev.classList.remove('dark');
-    swiperIconPrev.classList.remove('dark');
-    swiperIconNext.classList.remove('dark');
-  }
-}
-addDarkTheme();
-
-toggleTheme.addEventListener('change', () => {
-  addDarkTheme();
-});
