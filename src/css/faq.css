@@ -3,15 +3,15 @@
 }
 
 .faq-title-color {
-color: var(--green-text);
+    color: var(--green-text);
 }
 
-p.faq-list-item-text{
+p.faq-list-item-text {
     font-weight: 300;
-        font-size: 16px;
-        line-height: 150%;
-        letter-spacing: 0.03em;
-        padding: 0px 24px 28px 24px;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.03em;
+    padding: 0px 24px 28px 24px;
 }
 
 li.faq-list-item {
@@ -22,26 +22,26 @@ li.faq-list-item {
 
 li.ac.is-active {
     background-color: rgba(0, 176, 104, 0.2);
-border-radius: 16px;
+    border-radius: 16px;
 }
 
 .ac .faq-list-item-title .ac-trigger {
     font-family: var(--popins);
-        padding: 28px 72px 28px 24px;
-        font-weight: 400;
-            font-size: 18px;
-            line-height: 1.56;
-                letter-spacing: 0.03em; 
-                text-transform: uppercase;
+    padding: 28px 72px 28px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 li.ac .ac-trigger:focus {
-color: var(--dark-text) ;
+    color: var(--dark-text);
 }
 
 .ac .faq-list-item-title .ac-trigger::after {
     content: "";
-   }
+}
 
 li.ac.is-active>.ac-header .ac-trigger::after {
     content: "";
@@ -49,11 +49,12 @@ li.ac.is-active>.ac-header .ac-trigger::after {
 
 /* TABLET */
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     .faq-title {
-            margin-bottom: 60px;
-        }
-        .ac .faq-list-item-title .ac-trigger{
+        margin-bottom: 60px;
+    }
+
+    .ac .faq-list-item-title .ac-trigger {
         font-size: 20px;
         line-height: 1.6;
     }
@@ -61,21 +62,23 @@ li.ac.is-active>.ac-header .ac-trigger::after {
 
 /* DESKTOP */
 
-@media screen and (min-width: 1280px){
-    
-.faq-container{
-    min-height: 1020px;
-    display: flex;
-    gap: 104px;
-}
-.faq-title-wrapper{
-    background-image: url(../img/preloader/decor-bg-faq-desk.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-.faq-wrapper-list{
-    margin-top: auto;
-}
+@media screen and (min-width: 1280px) {
+
+    .faq-container {
+        min-height: 1020px;
+        display: flex;
+        gap: 104px;
+    }
+
+    .faq-title-wrapper {
+        background-image: url(../img/preloader/decor-bg-faq-desk.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    .faq-wrapper-list {
+        margin-top: auto;
+    }
 }
 
 
@@ -103,13 +106,14 @@ svg.icon-drop-down {
     background-color: #1e2023;
     border: none;
     border-bottom: 1px solid #2a2d32;
-} 
-.dark li.ac.is-active {
-    background-color: #204136;
-    
 }
 
-.dark .ac .faq-list-item-title .ac-trigger{
+.dark li.ac.is-active {
+    background-color: #204136;
+
+}
+
+.dark .ac .faq-list-item-title .ac-trigger {
     color: white;
 }
 
