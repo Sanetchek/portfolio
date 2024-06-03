@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
   const closeBtn=document.getElementById('close-menu');
   const menuList=document.querySelector('.menu-nav');
 
+  // Switch Mode for Light/Dark theme
   if (modeSwitcherBtn) {
     // Load color mode from localStorage
     const savedMode = localStorage.getItem('color-mode');
@@ -41,7 +42,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
   onPageLoad();
 
-  const onOpenMobileMenu=event=> {
+  // Handler Open Mobile Menu on click
+  const onOpenMobileMenu = event => {
     event.preventDefault();
 
     const headerMenuEl=document.querySelector('.header-menu');
@@ -50,8 +52,10 @@ document.addEventListener('DOMContentLoaded', ()=> {
     document.body.style.overflow='hidden';
   };
 
+  // Event for Open Menu
   burgerBtn.addEventListener('click', onOpenMobileMenu);
 
+  // Handler Close Mobile Menu on click
   const onCloseMobileMenu=event=> {
     event.preventDefault();
     const headerMenuEl=document.querySelector('.header-menu');
@@ -59,9 +63,11 @@ document.addEventListener('DOMContentLoaded', ()=> {
     document.body.style.overflow='inherit';
   };
 
+  // Event for Close Menu
   closeBtn.addEventListener('click', onCloseMobileMenu);
 
-  const menuLinkClick=event=> {
+  // Handler on Mobile Menu Click
+  const menuLinkClick = event=> {
     event.preventDefault();
     const targetLink=event.target.closest('.menu-list-link');
 
@@ -83,5 +89,63 @@ document.addEventListener('DOMContentLoaded', ()=> {
     }
   };
 
+  // Event On Mobile Menu Click
   menuList.addEventListener('click', menuLinkClick);
+
+  // Initialize the scroll function
+  scroll('#about', '#about-link');
+  scroll('#my-projects', '#project-link');
+  scroll('#contacts', '#contacts-link');
+
+  // Function Scroll
+  function scroll(id, item) {
+    window.addEventListener('scroll', function () {
+      let element = document.querySelector(id);
+      let menuItem = document.querySelector(item);
+
+      if (element && menuItem) {
+        let hT = element.offsetTop;
+        let blockHeight = element.offsetHeight;
+        let range = blockHeight - 100;
+        let wS = window.scrollY + 200;
+
+        if (wS >= hT && wS <= hT + range) {
+          document.querySelectorAll('.menu-list-item').forEach(function (el) {
+            el.classList.remove('active');
+          });
+          menuItem.classList.add('active');
+        } else {
+          menuItem.classList.remove('active');
+        }
+      }
+    });
+  }
+
+  // Smooth scroll to section
+  function handleLinkClick(event) {
+    event.preventDefault();
+
+    const targetId = event.target.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      const targetPosition = targetElement.offsetTop - 120; // 120px earlier
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+    }
+  }
+
+  const onDesktopMenuLinkClick = (event) => {
+    const link = event.target.classList.contains('menu-list-link');
+
+    if (link) {
+      handleLinkClick(event);
+    }
+  }
+
+  document.querySelector('.menu-list').addEventListener('click', onDesktopMenuLinkClick);
+
 });
