@@ -104,7 +104,7 @@ li.ac.is-active>.ac-header .ac-trigger::after {
 svg.icon-drop-up,
 svg.icon-drop-down {
     fill: transparent;
-    stroke: #000;
+    stroke: var(--dark-text);
 }
 
 .icon {
