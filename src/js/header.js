@@ -1,4 +1,10 @@
-document.addEventListener('DOMContentLoaded', ()=> {
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+// init aos animation
+AOS.init();
+
+document.addEventListener('DOMContentLoaded', () => {
   const modeSwitcherBtn = document.getElementById('mode-switcher');
   const burgerBtn = document.getElementById('show-menu');
   const closeBtn = document.getElementById('close-menu');
