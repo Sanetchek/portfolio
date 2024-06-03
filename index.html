@@ -18,7 +18,7 @@
     <script type="module" crossorigin src="/portfolio/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-82a02ed5.js">
     <link rel="stylesheet" href="/portfolio/assets/vendor-62eeb4fd.css">
-    <link rel="stylesheet" href="/portfolio/assets/index-a69233f6.css">
+    <link rel="stylesheet" href="/portfolio/assets/index-5532a12c.css">
   </head>
   <body>
     <header id="header">
@@ -48,7 +48,7 @@
 
         <button type="button" class="open-menu-but" id="show-menu">
           <svg class="burger-icon" width="32" height="32">
-            <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-menu"></use>
+            <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
@@ -64,7 +64,7 @@
           >
           <button type="button" class="close-menu-but" id="close-menu">
             <svg class="close-icon" width="32" height="32">
-              <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-x"></use>
+              <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-x"></use>
             </svg>
           </button>
         </div>
@@ -96,62 +96,90 @@
 
 
     <main class="main">
-      <section class="hero spacer">
-    <div class="container">
-        <div class="hero-text-content">
-        <h1 class="hero-title">Hello, I am
-            <picture>
-                <source srcset="../img/hero/hero-dt-1x.jpg 1x,
-                                ../img/hero/hero-dt-2x.jpg 2x,
-                                " media="(min-width: 1280px)" />
-                <img class="hero-foto" 
-                    src="../img/hero/hero-dt-1x.jpg" 
-                    alt="Lloyd Jefferson's photo" 
-                    width="108"
-                    height="108" />
-            </picture>
-            <br />
-            <span class="green-text"> Fullstack developer </span>
-        </h1>
+      <section class="hero">
+  <div class="container">
+    <div class="hero-background"></div>
+    <div class="hero-text-content">
+      <h1 class="hero-title">
+        Hello, I am
+        <picture>
+          <source
+            srcset="/portfolio/assets/hero-dt-1x-2d872827.jpg 1x, /portfolio/assets/hero-dt-2x-4bf79994.jpg 2x"
+            media="(min-width: 1280px)"
+          />
+          <img
+            class="hero-foto"
+            src="/portfolio/assets/hero-dt-1x-2d872827.jpg"
+            alt="Lloyd Jefferson's photo"
+            width="108"
+            height="108"
+          />
+        </picture>
+        <br />
+        <span class="green-text"> Fullstack developer </span>
+      </h1>
     </div>
-    <div class="hero-content-wrapper">  
-        <div class="hero-btn-wrapper">
-                <svg width="30" height="16" class="hero-btn-icon">
-                    <use href="../img/sprite.svg#icon-arrow-right"></use>
-                  </svg>
-        <a href="#contacts" aria-label="Hero section" class="hero-button">
-            Order the project
+    <div class="hero-content-wrapper">
+      <a
+        href="#contacts"
+        id="hero-link"
+        aria-label="Hero section"
+        class="hero-btn-wrapper"
+      >
+        <svg width="28" height="16" class="hero-btn-icon">
+          <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-arrow-right"></use>
+        </svg>
+        <span class="hero-button"> Order the project </span>
+        <span class="hero-btn-style"></span>
+      </a>
+
+      <p class="hero-text">
+        I work with people all over the world to create
+        <span class="green-text">impressive</span> and
+        <span class="green-text">functional websites</span> that reflect each
+        client’s unique personality.
+      </p>
+    </div>
+  </div>
+
+  <div class="hero-soc-link">
+    <ul>
+      <li class="hero-link">
+        <a
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          aria-label="Instagram"
+          >Instagram
         </a>
-        </div>
-        <div class="hero-btn-style"></div>
-        <p class="hero-text">I work with people all over the world to create <span class="green-text">impressive</span> and <span
-            class="green-text">functional
-            websites</span> that reflect each client’s unique personality.</p>
-       </div> 
-        
-            <div class="hero-soc-link">
-            <ul>
-                <li class="hero-link">
-                    <a href="https://www.instagram.com/goitclub/" target="_blank" aria-label="Instagram">Instagram
-                    </a>
-                </li>
-                <li class="hero-link">
-                    <a href="https://www.facebook.com/goITclub/" target="_blank" aria-label="Facebook">Facebook
-                    </a>
-                </li>
-                <li class="hero-link">
-                    <a href="https://www.linkedin.com/school/goit-start-your-career-in-it" target="_blank"
-                        aria-label="Linkedin">Linkedin
-                    </a>
-                </li>
-                <li class="hero-link">
-                    <a href="https://github.com/Sanetchek/portfolio" target="_blank" aria-label="GitHub">GitHub
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+      </li>
+      <li class="hero-link">
+        <a
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          aria-label="Facebook"
+          >Facebook
+        </a>
+      </li>
+      <li class="hero-link">
+        <a
+          href="https://www.linkedin.com/school/goit-start-your-career-in-it"
+          target="_blank"
+          aria-label="Linkedin"
+          >Linkedin
+        </a>
+      </li>
+      <li class="hero-link">
+        <a
+          href="https://github.com/Sanetchek/portfolio"
+          target="_blank"
+          aria-label="GitHub"
+          >GitHub
+        </a>
+      </li>
+    </ul>
+  </div>
 </section>
+
       <!-- ====ABOUT ME===== -->
 <section class="container spacer" id="about">
     <div class="wrap-box-about">
@@ -233,81 +261,81 @@
     <p class="tech-skill-line">
       HTML/CSS
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       JavaScript
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       React
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       Node. js
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       Native
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       Typescript
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       &nbsp;
     </p>
     <p class="tech-skill-line">
       HTML/CSS
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       JavaScript
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       React
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       Node. js
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       Native
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       Typescript
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       &nbsp;
     </p>
     <p class="tech-skill-line">
       HTML/CSS
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       JavaScript
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       React
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       Node. js
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       Native
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       Typescript
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       &nbsp;
     </p>
@@ -316,81 +344,81 @@
     <p class="tech-skill-line">
       Typescript
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       HTML/CSS
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       JavaScript
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       React
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       Node. js
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       Native
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       &nbsp;
     </p>
     <p class="tech-skill-line">
       Typescript
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       HTML/CSS
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       JavaScript
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       React
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       Node. js
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       Native
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       &nbsp;
     </p>
     <p class="tech-skill-line">
       Typescript
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       HTML/CSS
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       JavaScript
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       React
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       Node. js
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       Native
       <svg class="icon-dot" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-dot"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-dot"></use>
       </svg>
       &nbsp;
     </p>
@@ -426,7 +454,7 @@
               width="24"
               height="24"
             >
-              <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-arrow-up-right"></use>
+              <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-arrow-up-right"></use>
             </svg>
           </a>
         </div>
@@ -454,7 +482,7 @@
               width="24"
               height="24"
             >
-              <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-arrow-up-right"></use>
+              <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-arrow-up-right"></use>
             </svg>
           </a>
         </div>
@@ -482,7 +510,7 @@
               width="24"
               height="24"
             >
-              <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-arrow-up-right"></use>
+              <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-arrow-up-right"></use>
             </svg>
           </a>
         </div>
@@ -514,7 +542,7 @@
             <button type="button" id="iconButtonFaq" class="ac-trigger">
               What programming languages ​​are most often used in your
               project?<svg class="icon icon-drop-down" width="24" height="24">
-                <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-drop-down"></use>
+                <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-drop-down"></use>
               </svg>
             </button>
           </h3>
@@ -532,7 +560,7 @@
             <button type="button" class="ac-trigger">
               What are the deadlines for the project?
               <svg class="icon icon-drop-down" width="24" height="24">
-                <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-drop-down"></use>
+                <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-drop-down"></use>
               </svg>
             </button>
           </h3>
@@ -552,7 +580,7 @@
             <button type="button" class="ac-trigger">
               What payment methods do you accept?
               <svg class="icon icon-drop-down" width="24" height="24">
-                <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-drop-down"></use>
+                <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-drop-down"></use>
               </svg>
             </button>
           </h3>
@@ -570,7 +598,7 @@
             <button type="button" class="ac-trigger">
               How can I contact you?
               <svg class="icon icon-drop-down" width="24" height="24">
-                <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-drop-down"></use>
+                <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-drop-down"></use>
               </svg>
             </button>
           </h3>
@@ -588,7 +616,7 @@
             <button type="button" class="ac-trigger">
               Do you provide advice or support?
               <svg class="icon icon-drop-down" width="24" height="24">
-                <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-drop-down"></use>
+                <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-drop-down"></use>
               </svg>
             </button>
           </h3>
@@ -609,7 +637,7 @@
               What does the process of developing a software product look like
               from idea to implementation?
               <svg class="icon icon-drop-down" width="24" height="24">
-                <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-drop-down"></use>
+                <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-drop-down"></use>
               </svg>
             </button>
           </h3>
@@ -635,12 +663,12 @@
     <div class="swiper-button-wrapper">
       <button class="swiper-button-prev">
         <svg class="swiper-icon-prev" width="24px" height="24px">
-          <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-arrow-right"></use>
+          <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-arrow-right"></use>
         </svg>
       </button>
       <button class="swiper-button-next">
         <svg class="swiper-icon-next" width="24px" height="24px">
-          <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-arrow-right"></use>
+          <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-arrow-right"></use>
         </svg>
       </button>
     </div>
@@ -662,7 +690,7 @@
           <li class="contact-item">
             <a class="link" href="tel:+380904567890">
               <svg class="icon-phone" width="24" height="24">
-                <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-phone"></use>
+                <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-phone"></use>
               </svg>
               <span>+38 090 456 78 90</span>
             </a>
@@ -670,7 +698,7 @@
           <li class="contact-item">
             <a class="link" href="mailto:lloydjefferson@gmail.com">
               <svg class="icon-mail" width="24" height="24">
-                <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-mail"></use>
+                <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-mail"></use>
               </svg>
               <span>lloydjefferson@gmail.com</span>
             </a>
@@ -678,7 +706,7 @@
           <li class="contact-item">
             <a class="link" href="https://maps.app.goo.gl/Ct7PuVPrGhJZiskX6" target="_blank">
               <svg class="icon-point" width="24" height="24">
-                <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-point"></use>
+                <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-point"></use>
               </svg>
               <span>USA, New York</span>
             </a>
@@ -692,7 +720,7 @@
             <input type="email" name="customer_email" id="customer_email" placeholder="Your email*" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required>
 
             <svg class="icon-success" width="16" height="16">
-              <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-success"></use>
+              <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-success"></use>
             </svg>
 
             <span id="error_message"></span>
@@ -711,7 +739,7 @@
   <div class="modal-content">
     <button class="modal-close-btn">
       <svg class="icon-x" width="24" height="24">
-        <use href="/portfolio/assets/sprite-8f4e72b8.svg#icon-x"></use>
+        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-x"></use>
       </svg>
     </button>
 
