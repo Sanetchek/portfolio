@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const closeBtn = document.getElementById('close-menu');
   const menuList = document.querySelector('.menu-nav');
   const desktopMenuList = document.querySelector('.menu-list');
+  const heroLink = document.getElementById('hero-link');
 
   // Switch Mode for Light/Dark theme
   if (modeSwitcherBtn) {
@@ -82,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
       headerMenuEl.classList.remove('is-open');
       document.body.style.overflow = 'inherit';
 
-      handleLinkClick(event)
+      handleLinkClick(event.target)
     }
   };
 
@@ -120,9 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Smooth scroll to section
   function handleLinkClick(event) {
-    event.preventDefault();
-
-    const targetId = event.target.getAttribute('href').substring(1);
+    const targetId = event.getAttribute('href').substring(1);
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
@@ -137,14 +136,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Handler Desktop Menu Link
   const onDesktopMenuLinkClick = (event) => {
+    event.preventDefault();
     const link = event.target.classList.contains('menu-list-link');
 
     if (link) {
-      handleLinkClick(event);
+      handleLinkClick(event.target);
     }
+  }
+
+  // Handler Hero Link
+  const onHeroLinkClick = (event) => {
+    event.preventDefault();
+    handleLinkClick(event.currentTarget);
   }
 
   // Event Desktop Menu Link
   desktopMenuList.addEventListener('click', onDesktopMenuLinkClick);
+  heroLink.addEventListener('click', onHeroLinkClick);
 
 });
