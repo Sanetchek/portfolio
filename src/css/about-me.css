@@ -1,13 +1,4 @@
 /* =======MOBILE===== */
-.about-me {
-    min-width: 320px;
-    max-width: 360px;
-    margin: 0 auto;
-    padding-right: 20px;
-    padding-left: 20px;
-    height: 1750px;
-    margin-bottom: 80px;
-}
 
 .wrap-box-about {
     position: relative;
@@ -15,56 +6,36 @@
 
 .about-me-photo {
     margin-bottom: 40px;
-    position: relative;
+
 }
 
 .title-about {
     margin-bottom: 40px;
-    display: flex;
-    align-items: flex-start;
 }
 
 .me {
     color: #00b068;
 }
 
-.my-photo {
+.my-photo img {
     object-fit: cover;
-
+    border-radius: 16px;
 }
 
 .bio {
     margin-bottom: 40px;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     flex-direction: column;
     gap: 32px;
-    width: 320px;
-    height: 696px;
 }
 
 .text-wrap {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     flex-direction: column;
     gap: 24px;
-    height: 624px;
-    width: 320px;
-
 }
 
 .text-style {
-    display: flex;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.03em;
-
-}
-
-.text-style-edu {
     display: flex;
 }
 
@@ -75,122 +46,81 @@
     width: 4px;
     height: 4px;
     background: #00b068;
-    line-height: 24px;
     margin: 10px;
-    position: relative;
-}
-
-.text-style-edu.psevdo::before {
-    display: inline-block;
-    content: '';
-    border-radius: 1px;
-    width: 8px;
-    height: 4px;
-    background: #00b068;
-    line-height: 24px;
-    margin: 10px;
-    position: relative;
-}
-
-.content-wrap {
-    width: 320px;
+    flex-shrink: 0;
 }
 
 .education {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     flex-direction: column;
     gap: 32px;
-    height: 288px;
     margin-bottom: 40px;
 }
 
 .education-list {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     flex-direction: column;
     gap: 12px;
-    height: 216px;
 }
 
 .role {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     flex-direction: column;
     gap: 32px;
-    height: 168px;
 }
 
 .role-list {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     flex-direction: column;
     gap: 12px;
-    height: 96px;
+
 }
 
-.aboutme {
-    margin-bottom: 80px;
-}
 
 /* =======TABLET===== */
 @media only screen and (min-width: 768px) {
 
     .title-about {
         font-size: 108px;
-        line-height: 1.14815;
+        line-height: 1.14;
         letter-spacing: 0.02em;
     }
 
+    .about-wrap {
+        display: flex;
+    }
 
     .my-photo {
-        border-radius: 16px;
         width: 336px;
-        height: 392px;
         position: absolute;
         top: 532px;
     }
 
     .bio {
+        overflow-wrap: break-word;
         margin-left: auto;
         margin-bottom: 140px;
         width: 336px;
-        height: 680px;
     }
 
     .classic-title {
         font-size: 36px;
-        line-height: 1.33333;
+        line-height: 1.3;
         letter-spacing: 0.01em;
     }
 
-    .text-wrap {
-
-        height: 600px;
-    }
-
     .content-wrap {
-        width: 704px;
-        height: 280px;
         display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-        flex-direction: row;
         gap: 32px;
     }
 
     .education {
         width: 336px;
-        height: 280px;
+        margin: 0;
     }
 
     .role {
         width: 336px;
-        height: 184px;
     }
 
     .aboutme-decore {
@@ -198,17 +128,16 @@
         width: 336px;
         height: 252px;
         position: absolute;
-        right: 0;
-        bottom: 156px;
-        background: url('../img/about-me_img/decor-bg-tab-2.png');
-        background-size: cover;
+        right: 4px;
+        bottom: 145px;
+        background: url('../img/about-me_img/decor-bg-tab-2.png') no-repeat center / cover;
     }
 
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
         .aboutme-decore {
-            background: url('../img/about-me_img/decor-bg-tab-2x.png');
+            background: url('../img/about-me_img/decor-bg-tab-2x.png') no-repeat center / cover;
         }
     }
 }
@@ -218,49 +147,47 @@
 
     .bio {
         width: 488px;
-        height: 488px;
         margin-bottom: 312px;
     }
 
     .text-wrap {
         width: 488px;
-        height: 408px;
     }
 
     .content-wrap {
-        width: 904px;
-        height: 280px;
         gap: 136px;
-        position: absolute;
-        top: 964px;
-        left: 208px;
+        display: flex;
+        margin-left: 208px;
     }
 
     .my-photo {
-        border-radius: 16px;
         width: 384px;
         height: 448px;
-        position: absolute;
         top: 436px;
         left: 208px;
     }
 
+    .education {
+        width: 384px;
+        margin: 0;
+    }
+
+    .role {
+        width: 384px;
+    }
+
     .aboutme-decore {
-        display: flex;
         width: 384px;
         height: 288px;
-        position: absolute;
-        right: 30px;
-        bottom: -310px;
-        background: url('../img/about-me_img/decor-bg-desk-2.png');
-        background-size: cover;
+        bottom: 250px;
+        background: url('../img/about-me_img/decor-bg-desk-2.png') no-repeat center / cover;
     }
 
     @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
         .aboutme-decore {
-            background: url('../img/about-me_img/decor-bg-desk-2x.png');
+            background: url('../img/about-me_img/decor-bg-desk-2x.png') no-repeat center / cover;
         }
     }
 }
