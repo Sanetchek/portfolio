@@ -71,15 +71,27 @@ li.ac.is-active>.ac-header .ac-trigger::after {
 @media screen and (min-width: 1280px) {
 
     .faq-container {
+        position: relative;
         min-height: 1020px;
         display: flex;
         gap: 104px;
     }
 
-    .faq-title-wrapper {
-        background-image: url(../img/preloader/decor-bg-faq-desk.png);
-        background-repeat: no-repeat;
-        background-position: bottom;
+    .faq-background-decore {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 526px;
+        height: 408px;
+        background: url('../img/preloader/decor-bg-faq-desk.png') no-repeat center / contain;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+        .faq-background-decore {
+            background: url('../img/preloader/decor-bg-faq-desk-2x.png') no-repeat center / contain;
+        }
     }
 
     .faq-wrapper-list {

@@ -98,6 +98,7 @@ textarea {
 .dark input,
 .dark textarea {
   background: #2a2d32;
+  color: var(--light-text);
 }
 
 input {
@@ -106,7 +107,7 @@ input {
 
 textarea {
   min-height: 128px;
-  resize: vertical;
+  resize: none;
 }
 
 input::placeholder, textarea::placeholder {
