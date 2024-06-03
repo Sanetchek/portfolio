@@ -1,11 +1,9 @@
 #benefits {
-    padding-top: 80px;
-    padding-left: 20px;
-    padding-right: 20px;
+    position: relative;
 }
 .title-benefits {
-    font-size: 52px;
     margin-bottom: 40px;
+    margin-top: 80px;
 }
 .span-benefits {
 color: #00b068;
@@ -27,23 +25,26 @@ color: #00b068;
 .item-benefits {
     font-size: 18px;
     margin-bottom: 16px;
+    line-height: 1.55556;
+    letter-spacing: 0.03em;
 }
-.text-benefits {
+
+.benefits-width:not(:last-child) {
     margin-bottom: 32px;
 }
 
 @media screen and (min-width: 768px) {
-    #benefits {
-        padding-top: 124px;
-    }
+
     .title-benefits {
-        font-size: 108px;
         width: 704px;
         padding: 0;
         margin-bottom: 0;
+        margin-top: 124px;
     }
     .item-benefits {
         font-size: 20px;
+        line-height: 1.6;
+        letter-spacing: 0.03em;
     }
     .benefits-common {
         margin-top: -20px;
@@ -52,6 +53,7 @@ color: #00b068;
         gap: 32px;
     }
     .benefits-width {
+        margin-bottom: 32px;
         grid-column: span 1;
         width: 336px;
     }
@@ -61,17 +63,18 @@ color: #00b068;
 }
 
 @media screen and (min-width: 1280px) {
-    #benefits {
+    /* #benefits {
+        position: relative;
         padding-top: 164px;
-    }
+    } */
     .title-benefits {
         position: relative;
-    
+        margin-top: 164px;
     }
     .background-benefits {
         position: absolute;
-        right: 32px;
-        top: 16px;
+        right: 0;
+        top: -164px;
         width: 526px;
         height: 408px;
         background-image: url(../img/benefits-img/backgr-min.png);
