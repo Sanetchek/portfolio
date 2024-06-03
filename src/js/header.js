@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Update checked state
       modeSwitcherBtn.checked = mode === 'dark';
-      console.log(modeSwitcherBtn.checked);
     };
 
     // Attach event listener
