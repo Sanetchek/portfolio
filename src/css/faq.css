@@ -25,6 +25,12 @@ li.ac.is-active {
     border-radius: 16px;
 }
 
+li.ac.is-active svg.icon-drop-down {
+    transform: translate(0, -50%) rotate(180deg);
+    -webkit-transform: translate(0, -50%) rotate(180deg);
+    transform-origin: center;
+}
+
 .ac .faq-list-item-title .ac-trigger {
     font-family: var(--popins);
     padding: 28px 72px 28px 24px;
@@ -90,8 +96,6 @@ svg.icon-drop-down {
 }
 
 .icon {
-    text-align: center;
-    width: px;
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     position: absolute;
