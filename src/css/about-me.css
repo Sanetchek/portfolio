@@ -4,11 +4,6 @@
     position: relative;
 }
 
-.about-me-photo {
-    margin-bottom: 40px;
-
-}
-
 .title-about {
     margin-bottom: 40px;
 }
@@ -24,19 +19,14 @@
 
 .bio {
     margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
 }
 
-.text-wrap {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+.classic-title {
+    margin-bottom: 32px;
 }
 
-.text-style {
-    display: flex;
+.text-style:not(:last-child) {
+    margin-bottom: 24px;
 }
 
 .text-style.psevdo::before {
@@ -51,10 +41,11 @@
 }
 
 .education {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
     margin-bottom: 40px;
+}
+
+.text-style.psevdo {
+    margin-bottom: 0;
 }
 
 .education-list {
@@ -63,10 +54,8 @@
     gap: 12px;
 }
 
-.role {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
+.about-me-photo {
+    margin-bottom: 40px;
 }
 
 .role-list {
@@ -76,6 +65,10 @@
 
 }
 
+li.text-style.psevdo {
+    margin-bottom: 0;
+    display: flex;
+}
 
 /* =======TABLET===== */
 @media only screen and (min-width: 768px) {
@@ -88,6 +81,9 @@
 
     .about-wrap {
         display: flex;
+        align-items: flex-end;
+        gap: 32px;
+        margin-bottom: 60px;
     }
 
     .my-photo {
@@ -96,11 +92,19 @@
         top: 532px;
     }
 
+    .about-me-photo {
+        margin-bottom: unset;
+    }
+
     .bio {
         overflow-wrap: break-word;
         margin-left: auto;
-        margin-bottom: 140px;
+        margin-bottom: 80px;
         width: 336px;
+    }
+
+    .education-list {
+        gap: 16px;
     }
 
     .classic-title {
@@ -129,7 +133,7 @@
         height: 252px;
         position: absolute;
         right: 4px;
-        bottom: 145px;
+        bottom: 155px;
         background: url('../img/about-me_img/decor-bg-tab-2.png') no-repeat center / cover;
     }
 
@@ -147,17 +151,25 @@
 
     .bio {
         width: 488px;
-        margin-bottom: 312px;
+        margin-bottom: 232px;
     }
 
     .text-wrap {
         width: 488px;
     }
 
+    .about-wrap {
+        max-width: 1008px;
+        margin-left: auto;
+        margin-bottom: 80px;
+        gap: 136px;
+    }
+
     .content-wrap {
+        width: 1008px;
         gap: 136px;
         display: flex;
-        margin-left: 208px;
+        margin-left: auto;
     }
 
     .my-photo {
