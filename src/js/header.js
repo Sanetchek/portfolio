@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', ()=> {
-  const modeSwitcherBtn=document.getElementById('mode-switcher');
-  const burgerBtn=document.getElementById('show-menu');
-  const closeBtn=document.getElementById('close-menu');
-  const menuList=document.querySelector('.menu-nav');
+  const modeSwitcherBtn = document.getElementById('mode-switcher');
+  const burgerBtn = document.getElementById('show-menu');
+  const closeBtn = document.getElementById('close-menu');
+  const menuList = document.querySelector('.menu-nav');
+  const desktopMenuList = document.querySelector('.menu-list');
 
   // Switch Mode for Light/Dark theme
   if (modeSwitcherBtn) {
@@ -67,25 +68,16 @@ document.addEventListener('DOMContentLoaded', ()=> {
   closeBtn.addEventListener('click', onCloseMobileMenu);
 
   // Handler on Mobile Menu Click
-  const menuLinkClick = event=> {
+  const menuLinkClick = event => {
     event.preventDefault();
-    const targetLink=event.target.closest('.menu-list-link');
+    const targetLink = event.target.classList.contains('menu-list-link');
 
     if (targetLink) {
-      const targetSectionId=targetLink.getAttribute('href');
-      const targetSection=document.querySelector(targetSectionId);
-      const headerMenuEl=document.querySelector('.header-menu');
+      const headerMenuEl = document.querySelector('.header-menu');
       headerMenuEl.classList.remove('is-open');
-      document.body.style.overflow='inherit';
+      document.body.style.overflow = 'inherit';
 
-      if (targetSection) {
-        window.scrollTo( {
-            top: targetSection.offsetTop,
-            behavior: 'smooth',
-          }
-
-        );
-      }
+      handleLinkClick(event)
     }
   };
 
@@ -138,6 +130,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     }
   }
 
+  // Handler Desktop Menu Link
   const onDesktopMenuLinkClick = (event) => {
     const link = event.target.classList.contains('menu-list-link');
 
@@ -146,6 +139,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     }
   }
 
-  document.querySelector('.menu-list').addEventListener('click', onDesktopMenuLinkClick);
+  // Event Desktop Menu Link
+  desktopMenuList.addEventListener('click', onDesktopMenuLinkClick);
 
 });
