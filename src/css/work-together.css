@@ -122,6 +122,10 @@ input::placeholder, textarea::placeholder {
   color: rgba(41, 41, 41, 0.4);
 }
 
+.dark input::placeholder, .dark textarea::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
 button.form-submit {
   background-color: var(--green-text);
   border: 0;
