@@ -22,12 +22,6 @@
   --transition-function: ease;
 }
 
-:focus-visible {
-  outline: 2px solid -webkit-focus-ring-color !important;
-  outline-offset: 2px;
-  border-radius: 8px;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -46,6 +40,18 @@ body {
 body.dark {
   color: var(--light-text);
   background-color: var(--dark-bg);
+}
+
+:focus-visible {
+  outline: 2px solid var(--dark-text) !important;
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+body.dark :focus-visible {
+  outline: 2px solid var(--light-bg) !important;
+  outline-offset: 2px;
+  border-radius: 8px;
 }
 
 /* Reset styles */
