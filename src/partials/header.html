@@ -2,7 +2,11 @@
   <div class="header">
     <div class="header-wrap">
       <div class="header-container">
-        <a class="logo-header" href="https://sanetchek.github.io/portfolio/"
+        <a
+          class="logo-header"
+          href="https://sanetchek.github.io/portfolio/"
+          aria-label="Home"
+          tabindex="0"
           >LLOYD<span class="green-text">JEFFERSON</span></a
         >
         <nav class="menu-nav-tabl">
@@ -13,23 +17,44 @@
           ></label>
           <ul class="menu-list">
             <li id="menu_about" class="menu-list-item">
-              <a href="#about" id="about-link" class="menu-list-link"
+              <a
+                href="#about"
+                id="about-link"
+                class="menu-list-link"
+                aria-label="About me"
+                tabindex="0"
                 >About me</a
               >
             </li>
             <li id="menu_yachts" class="menu-list-item">
-              <a href="#my-projects" id="project-link" class="menu-list-link"
+              <a
+                href="#my-projects"
+                id="project-link"
+                class="menu-list-link"
+                aria-label="Projects"
+                tabindex="0"
                 >Projects</a
               >
             </li>
             <li id="menu_review" class="menu-list-item">
-              <a href="#contacts" id="contacts-link" class="menu-list-link"
+              <a
+                href="#contacts"
+                id="contacts-link"
+                class="menu-list-link"
+                aria-label="Contacts"
+                tabindex="0"
                 >Contacts</a
               >
             </li>
           </ul>
         </nav>
-        <button type="button" class="open-menu-but" id="show-menu">
+        <button
+          type="button"
+          class="open-menu-but"
+          id="show-menu"
+          aria-label="Open Menu"
+          tabindex="0"
+        >
           <svg class="burger-icon" width="32" height="32">
             <use href="./img/sprite.svg#icon-menu"></use>
           </svg>
@@ -41,9 +66,19 @@
     <div class="menu-wrap">
       <div class="menu-nav-wrap">
         <div class="menu">
-          <a class="header-menu-logo" href="/portfolio/" aria-label="Home"
+          <a
+            class="header-menu-logo"
+            href="/portfolio/"
+            aria-label="Home"
+            tabindex="0"
             >LLOYD<span>JEFFERSON</span></a
-          ><button type="button" class="close-menu-but" id="close-menu">
+          ><button
+            type="button"
+            class="close-menu-but"
+            id="close-menu"
+            aria-label="Close Menu"
+            tabindex="0"
+          >
             <svg class="close-icon" width="32" height="32">
               <use href="./img/sprite.svg#icon-x"></use>
             </svg>
@@ -52,14 +87,24 @@
         <nav class="menu-nav">
           <ul class="menu-list">
             <li class="menu-list-item">
-              <a href="#about" class="menu-list-link menu-link-js">About me</a>
-            </li>
-            <li class="menu-list-item">
-              <a href="#my-projects" class="menu-list-link menu-link-js"
-                >Projects</a
+              <a
+                href="#about"
+                class="menu-list-link menu-link-js"
+                aria-label="About me"
+                tabindex="0"
+                >About me</a
               >
             </li>
             <li class="menu-list-item">
+              <a
+                href="#my-projects"
+                class="menu-list-link menu-link-js"
+                aria-label="Projects"
+                tabindex="0"
+                >Projects</a
+              >
+            </li>
+            <li class="menu-list-item" aria-label="Contacts" tabindex="0">
               <a href="#contacts" class="menu-list-link menu-link-js"
                 >Contacts</a
               >

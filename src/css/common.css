@@ -22,6 +22,12 @@
   --transition-function: ease;
 }
 
+:focus-visible {
+  outline: 2px solid -webkit-focus-ring-color;
+  outline-offset: 6px;
+  border-radius: 8px;
+}
+
 html {
   scroll-behavior: smooth;
 }

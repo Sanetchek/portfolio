@@ -8,7 +8,7 @@
   height: 704px;
   position: absolute;
   top: 16px;
-  right: 0;
+  right: 20px;
   z-index: -1;
   background: url('../img/hero/hero-bg-mob-1x.png') no-repeat center / contain;
 }
@@ -125,6 +125,7 @@ p.hero-text {
   .hero-background {
     width: 704px;
     height: 896px;
+    right: 32px;
     background: url('../img/hero/hero-bg-tab-1x.png') no-repeat center / contain;
   }
 

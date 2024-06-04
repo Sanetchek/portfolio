@@ -14,7 +14,12 @@
 
         <ul class="contacts-list">
           <li class="contact-item" data-aos="fade-right" data-aos-delay="150">
-            <a class="link" href="tel:+380904567890">
+            <a
+              class="link"
+              href="tel:+380904567890"
+              aria-label="Call me"
+              tabindex="0"
+            >
               <svg class="icon-phone" width="24" height="24">
                 <use href="./img/sprite.svg#icon-phone"></use>
               </svg>
@@ -22,7 +27,12 @@
             </a>
           </li>
           <li class="contact-item" data-aos="fade-right" data-aos-delay="200">
-            <a class="link" href="mailto:lloydjefferson@gmail.com">
+            <a
+              class="link"
+              href="mailto:lloydjefferson@gmail.com"
+              aria-label="Email to me"
+              tabindex="0"
+            >
               <svg class="icon-mail" width="24" height="24">
                 <use href="./img/sprite.svg#icon-mail"></use>
               </svg>
@@ -33,6 +43,8 @@
             <a
               class="link"
               href="https://maps.app.goo.gl/Ct7PuVPrGhJZiskX6"
+              aria-label="See where you can find me"
+              tabindex="0"
               target="_blank"
             >
               <svg class="icon-point" width="24" height="24">
@@ -58,6 +70,8 @@
               id="customer_email"
               placeholder="Your email*"
               pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+              aria-label="Enter your email"
+              tabindex="0"
               required
             />
 
@@ -74,9 +88,17 @@
             cols="30"
             rows="5"
             placeholder="Message"
+            aria-label="Text me a nessage"
+            tabindex="0"
           ></textarea>
 
-          <button type="submit" id="form_submit" class="form-submit">
+          <button
+            type="submit"
+            id="form_submit"
+            class="form-submit"
+            aria-label="Send Request"
+            tabindex="0"
+          >
             SEND MESSAGE
           </button>
         </form>
