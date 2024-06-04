@@ -1,11 +1,3 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-// init aos animation
-AOS.init({
-  offset: 60
-});
-
 document.addEventListener('DOMContentLoaded', () => {
   const modeSwitcherBtn = document.getElementById('mode-switcher');
   const burgerBtn = document.getElementById('show-menu');
