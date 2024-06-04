@@ -39,6 +39,12 @@
   width: 100%;
 }
 
+.header-navigation {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
 .logo-header {
   color: #292929;
   font-family: Impact;
