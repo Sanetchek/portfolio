@@ -3,7 +3,6 @@
 }
 .title-benefits {
     margin-bottom: 40px;
-    margin-top: 80px;
 }
 .span-benefits {
 color: #00b068;
@@ -39,7 +38,6 @@ color: #00b068;
         width: 704px;
         padding: 0;
         margin-bottom: 0;
-        margin-top: 124px;
     }
     .item-benefits {
         font-size: 20px;
@@ -63,13 +61,9 @@ color: #00b068;
 }
 
 @media screen and (min-width: 1280px) {
-    /* #benefits {
-        position: relative;
-        padding-top: 164px;
-    } */
+    
     .title-benefits {
         position: relative;
-        margin-top: 164px;
     }
     .background-benefits {
         position: absolute;
