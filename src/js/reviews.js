@@ -11,7 +11,7 @@ const murkup = function (reviews) {
       <li class="swiper-slide">
         <p class="swiper-text">${review.review}"</p>
         <div class="swiper-author-wrapper">
-          <img class="swiper-image" src="${review.avatar_url}" alt="author image">
+          <img class="swiper-image" src="${review.avatar_url}" alt="author image" loading="lazy">
           <p class="swiper-author">${review.author}</p>
         </div>
       </li>`);
