@@ -225,7 +225,7 @@ const onLoadMoreBtnClick = () => {
 
   listEl.insertAdjacentHTML('beforeend', projectsToLoad);
 
-  AOS.refesh();
+  AOS.refresh();
 
   window.scrollBy({
     top: lastGalleryItemEl.getBoundingClientRect().bottom,
