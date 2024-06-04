@@ -31,8 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Attach event listener
     modeSwitcherBtn.addEventListener('change', switchColorModeHandler);
 
-    document.addEventListener('keydown', function(event) {
-      if (event.key === 'Enter') {
+    document.addEventListener('keydown', function (event) {
+      const switcher = event.target.classList.contains('switcher')
+      if (switcher && event.key === 'Enter') {
         // Assuming 'modeSwitcherBtn' is the ID of your button
         modeSwitcherBtn.click();
       }
