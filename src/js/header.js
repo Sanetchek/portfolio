@@ -49,7 +49,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  onPageLoad();
+  // Hide Preloader after 2 seconds
+  setTimeout(() => {
+    onPageLoad();
+  }, 2000);
 
   // Handler Open Mobile Menu on click
   const onOpenMobileMenu = event => {
