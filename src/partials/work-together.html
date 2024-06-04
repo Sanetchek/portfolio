@@ -1,16 +1,19 @@
 <div id="contacts" class="contacts spacer">
+  <div class="contacts-decore"></div>
+
   <div class="container">
     <div class="contacts-wrap">
-      <div class="contacts-decore"></div>
       <div class="contact-info">
-        <h2 class="">let’s <span class="green-text">work together</span></h2>
+        <h2 data-aos="fade-up">
+          let’s <span class="green-text">work together</span>
+        </h2>
 
-        <p class="caption">
+        <p class="caption" data-aos="fade-right" data-aos-delay="100">
           Contact me to transform your ideas into exceptional solutions.
         </p>
 
         <ul class="contacts-list">
-          <li class="contact-item">
+          <li class="contact-item" data-aos="fade-right" data-aos-delay="150">
             <a class="link" href="tel:+380904567890">
               <svg class="icon-phone" width="24" height="24">
                 <use href="./img/sprite.svg#icon-phone"></use>
@@ -18,7 +21,7 @@
               <span>+38 090 456 78 90</span>
             </a>
           </li>
-          <li class="contact-item">
+          <li class="contact-item" data-aos="fade-right" data-aos-delay="200">
             <a class="link" href="mailto:lloydjefferson@gmail.com">
               <svg class="icon-mail" width="24" height="24">
                 <use href="./img/sprite.svg#icon-mail"></use>
@@ -26,8 +29,12 @@
               <span>lloydjefferson@gmail.com</span>
             </a>
           </li>
-          <li class="contact-item">
-            <a class="link" href="https://maps.app.goo.gl/Ct7PuVPrGhJZiskX6" target="_blank">
+          <li class="contact-item" data-aos="fade-right" data-aos-delay="250">
+            <a
+              class="link"
+              href="https://maps.app.goo.gl/Ct7PuVPrGhJZiskX6"
+              target="_blank"
+            >
               <svg class="icon-point" width="24" height="24">
                 <use href="./img/sprite.svg#icon-point"></use>
               </svg>
@@ -38,9 +45,21 @@
       </div>
 
       <div class="contact-side">
-        <form id="contact_form" class="contact-form">
+        <form
+          id="contact_form"
+          class="contact-form"
+          data-aos="fade-up-left"
+          data-aos-delay="100"
+        >
           <label for="customer_email" class="email-label">
-            <input type="email" name="customer_email" id="customer_email" placeholder="Your email*" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required>
+            <input
+              type="email"
+              name="customer_email"
+              id="customer_email"
+              placeholder="Your email*"
+              pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+              required
+            />
 
             <svg class="icon-success" width="16" height="16">
               <use href="./img/sprite.svg#icon-success"></use>
@@ -49,9 +68,17 @@
             <span id="error_message"></span>
           </label>
 
-          <textarea name="customer_message" id="customer_message" cols="30" rows="5" placeholder="Message"></textarea>
+          <textarea
+            name="customer_message"
+            id="customer_message"
+            cols="30"
+            rows="5"
+            placeholder="Message"
+          ></textarea>
 
-          <button type="submit" id="form_submit" class="form-submit">SEND MESSAGE</button>
+          <button type="submit" id="form_submit" class="form-submit">
+            SEND MESSAGE
+          </button>
         </form>
       </div>
     </div>

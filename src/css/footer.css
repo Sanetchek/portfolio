@@ -4,6 +4,7 @@
   padding-top: 40px;
   padding-bottom: 24px;
   border-top: #e4e5e6 1px solid;
+  overflow: hidden;
 }
 
 .dark .footer {
@@ -31,13 +32,12 @@
 .dark .logo-footer {
   color: var(--light-text);
 }
-.logo-footer span {
-  color: #00b068;
-}
+
 .footer-soc-link {
   display: flex;
   flex-direction: column;
 }
+
 .footer-link {
   color: #292929;
   font-family: Poppins;
@@ -47,6 +47,7 @@
   letter-spacing: 0.03em;
   margin-bottom: 24px;
 }
+
 .footer-link:last-child {
   margin-bottom: 0;
 }

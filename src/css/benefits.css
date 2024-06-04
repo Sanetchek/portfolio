@@ -1,109 +1,116 @@
 #benefits {
-    position: relative;
+  position: relative;
 }
+
 .title-benefits {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
-.span-benefits {
-color: #00b068;
-}
+
 .icon-benefits {
-    border-radius: 8px;
-    width: 48px;
-    height: 48px;
-    background: rgba(0, 176, 104, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 16px;
+  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  background: rgba(0, 176, 104, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
 }
+
 .icon-color {
-    stroke: #00b068;
-    fill: none;
+  stroke: #00b068;
+  fill: none;
 }
+
 .item-benefits {
-    font-size: 18px;
-    margin-bottom: 16px;
-    line-height: 1.55556;
-    letter-spacing: 0.03em;
+  font-size: 18px;
+  margin-bottom: 16px;
+  line-height: 1.55556;
+  letter-spacing: 0.03em;
 }
 
 .benefits-width:not(:last-child) {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 @media screen and (min-width: 768px) {
 
-    .title-benefits {
-        width: 704px;
-        padding: 0;
-        margin-bottom: 0;
-    }
-    .item-benefits {
-        font-size: 20px;
-        line-height: 1.6;
-        letter-spacing: 0.03em;
-    }
-    .benefits-common {
-        margin-top: -20px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 32px;
-    }
-    .benefits-width {
-        margin-bottom: 32px;
-        grid-column: span 1;
-        width: 336px;
-    }
-    .benefits-width:first-child {
-        grid-column: 2;
-    }
+  .title-benefits {
+    width: 704px;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .item-benefits {
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
+
+  .benefits-common {
+    margin-top: -20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .benefits-width {
+    margin-bottom: 32px;
+    grid-column: span 1;
+    width: 336px;
+  }
+
+  .benefits-width:first-child {
+    grid-column: 2;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    
-    .title-benefits {
-        position: relative;
-    }
-    .background-benefits {
-        position: absolute;
-        right: 0;
-        top: -164px;
-        width: 526px;
-        height: 408px;
-        background-image: url(../img/benefits-img/backgr-min.png);
-        background-size: cover;
-        background-position: center;
-        filter: blur(7.40168571472168px);
-    }
-        @media screen and (min-device-pixel-ratio: 2),
-        (min-resolution: 2dppx),
-        (min-resolution: 192dpi) {
-            .background-benefits {
-                background-image: url(../img/benefits-img/backgr\ 2x-min.png);
-            }
-        }
-    
-    .benefits-common {
-        margin-top: -90px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        gap: 32px;
-    }
-    
-    .benefits-width {
-        width: 384px;
-    }
-    .benefits-width:nth-child(1) {
-        grid-row: 1;
-        grid-column: 3;
-    }
+  .title-benefits {
+    position: relative;
+  }
 
-    .benefits-width:nth-child(2),
-    .benefits-width:nth-child(3),
-    .benefits-width:nth-child(4) {
-        grid-row: 2;
-        grid-column: span 1;
+  .background-benefits {
+    position: absolute;
+    right: 0;
+    top: -164px;
+    width: 526px;
+    height: 408px;
+    background-image: url(../img/benefits-img/backgr-min.png);
+    background-size: cover;
+    background-position: center;
+    filter: blur(7.40168571472168px);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+    .background-benefits {
+      background-image: url(../img/benefits-img/backgr\ 2x-min.png);
     }
+  }
+
+  .benefits-common {
+    margin-top: -90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 32px;
+  }
+
+  .benefits-width {
+    width: 384px;
+  }
+
+  .benefits-width:nth-child(1) {
+    grid-row: 1;
+    grid-column: 3;
+  }
+
+  .benefits-width:nth-child(2),
+  .benefits-width:nth-child(3),
+  .benefits-width:nth-child(4) {
+    grid-row: 2;
+    grid-column: span 1;
+  }
 }
