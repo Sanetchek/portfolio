@@ -18,7 +18,7 @@
     <script type="module" crossorigin src="/portfolio/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-82a02ed5.js">
     <link rel="stylesheet" href="/portfolio/assets/vendor-62eeb4fd.css">
-    <link rel="stylesheet" href="/portfolio/assets/index-9f732ec2.css">
+    <link rel="stylesheet" href="/portfolio/assets/index-88c075da.css">
   </head>
   <body>
 
@@ -27,26 +27,32 @@
     <div class="header-wrap">
       <div class="header-container">
         <a class="logo-header" href="https://sanetchek.github.io/portfolio/"
-          >LLOYD<span>JEFFERSON</span></a
+          >LLOYD<span class="green-text">JEFFERSON</span></a
         >
         <nav class="menu-nav-tabl">
-          <label class="switcher">
-            <input type="checkbox" id="mode-switcher" />
-            <span class="slider"></span>
-          </label>
+          <label class="switcher"
+            ><input type="checkbox" id="mode-switcher" /><span
+              class="slider"
+            ></span
+          ></label>
           <ul class="menu-list">
             <li id="menu_about" class="menu-list-item">
-              <a href="#about" id="about-link" class="menu-list-link">About me</a>
+              <a href="#about" id="about-link" class="menu-list-link"
+                >About me</a
+              >
             </li>
             <li id="menu_yachts" class="menu-list-item">
-              <a href="#my-projects" id="project-link" class="menu-list-link">Projects</a>
+              <a href="#my-projects" id="project-link" class="menu-list-link"
+                >Projects</a
+              >
             </li>
             <li id="menu_review" class="menu-list-item">
-              <a href="#contacts" id="contacts-link" class="menu-list-link">Contacts</a>
+              <a href="#contacts" id="contacts-link" class="menu-list-link"
+                >Contacts</a
+              >
             </li>
           </ul>
         </nav>
-
         <button type="button" class="open-menu-but" id="show-menu">
           <svg class="burger-icon" width="32" height="32">
             <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-menu"></use>
@@ -55,15 +61,13 @@
       </div>
     </div>
   </div>
-
   <div class="header-menu">
     <div class="menu-wrap">
       <div class="menu-nav-wrap">
         <div class="menu">
           <a class="header-menu-logo" href="/portfolio/" aria-label="Home"
             >LLOYD<span>JEFFERSON</span></a
-          >
-          <button type="button" class="close-menu-but" id="close-menu">
+          ><button type="button" class="close-menu-but" id="close-menu">
             <svg class="close-icon" width="32" height="32">
               <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-x"></use>
             </svg>
@@ -97,7 +101,7 @@
   <div class="container">
     <div class="hero-background"></div>
     <div class="hero-text-content">
-      <h1 class="hero-title">
+      <h1 class="hero-title" data-aos="fade-up">
         Hello, I am
         <picture>
           <source
@@ -122,6 +126,7 @@
         id="hero-link"
         aria-label="Hero section"
         class="hero-btn-wrapper"
+        data-aos="fade-right"
       >
         <svg width="28" height="16" class="hero-btn-icon">
           <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-arrow-right"></use>
@@ -130,7 +135,7 @@
         <span class="hero-btn-style"></span>
       </a>
 
-      <p class="hero-text">
+      <p class="hero-text" data-aos="fade-left">
         I work with people all over the world to create
         <span class="green-text">impressive</span> and
         <span class="green-text">functional websites</span> that reflect each
@@ -141,7 +146,7 @@
 
   <div class="hero-soc-link">
     <ul>
-      <li class="hero-link">
+      <li class="hero-link" data-aos="fade-right" data-aos-delay="100">
         <a
           href="https://www.instagram.com/goitclub/"
           target="_blank"
@@ -149,7 +154,7 @@
           >Instagram
         </a>
       </li>
-      <li class="hero-link">
+      <li class="hero-link" data-aos="fade-right" data-aos-delay="200">
         <a
           href="https://www.facebook.com/goITclub/"
           target="_blank"
@@ -157,7 +162,7 @@
           >Facebook
         </a>
       </li>
-      <li class="hero-link">
+      <li class="hero-link" data-aos="fade-right" data-aos-delay="300">
         <a
           href="https://www.linkedin.com/school/goit-start-your-career-in-it"
           target="_blank"
@@ -165,7 +170,7 @@
           >Linkedin
         </a>
       </li>
-      <li class="hero-link">
+      <li class="hero-link" data-aos="fade-right" data-aos-delay="400">
         <a
           href="https://github.com/Sanetchek/portfolio"
           target="_blank"
@@ -177,13 +182,14 @@
   </div>
 </section>
 
-      <!-- ====ABOUT ME===== -->
-<section class="container spacer" id="about">
+      <section class="container spacer" id="about">
   <div class="wrap-box-about">
-    <h2 class="title-about">ABOUT <span class="me"> ME</span></h2>
+    <h2 class="title-about" data-aos="fade-up">
+      ABOUT <span class="green-text"> ME</span>
+    </h2>
     <div class="about-wrap">
       <div class="about-me-photo">
-        <picture class="my-photo">
+        <picture class="my-photo" data-aos="fade-right">
           <source
             srcset="/portfolio/assets/desk-aboutme-1x-d5dd8683.jpg 1x, /portfolio/assets/desk-aboutme-2x-6d6cad97.jpg 2x"
             media="(min-width: 1280px)"
@@ -208,9 +214,11 @@
         </picture>
       </div>
       <div class="bio">
-        <h3 class="classic-title">BIO</h3>
+        <h3 class="classic-title" data-aos="fade-left" data-aos-delay="100">
+          BIO
+        </h3>
         <div class="text-wrap">
-          <p class="text-style">
+          <p class="text-style" data-aos="fade-left" data-aos-delay="200">
             I'm Lloyd Jefferson, a talented programmer specializing in software
             development. My expertise spans various programming languages and
             technologies, and I am dedicated to continually enhancing my skills.
@@ -218,7 +226,7 @@
             problems, leveraging a high level of analytical skills to
             effectively tackle even the most challenging tasks.
           </p>
-          <p class="text-style">
+          <p class="text-style" data-aos="fade-left" data-aos-delay="300">
             Adaptable to both independent and team-oriented work, I collaborate
             seamlessly with colleagues, exchanging ideas and finding optimal
             solutions. My professional maturity enables me to navigate
@@ -232,7 +240,7 @@
     </div>
     <div class="aboutme-decore"></div>
     <div class="content-wrap">
-      <div class="education">
+      <div class="education" data-aos="fade-up">
         <h3 class="classic-title">EDUCATION</h3>
         <ul class="education-list">
           <li class="text-style psevdo">
@@ -248,7 +256,7 @@
           </li>
         </ul>
       </div>
-      <div class="role">
+      <div class="role" data-aos="fade-up" data-aos-delay="300">
         <h3 class="classic-title">ROLE</h3>
         <ul class="role-list">
           <li class="text-style psevdo">Frontend development</li>
@@ -261,7 +269,7 @@
 </section>
 
       <section class="tech-skill spacer">
-  <h3 class="visually-hidden">Tech Skills</h3>
+  <h2 class="visually-hidden">Tech Skills</h2>
   <div class="skill-item geen-dot">
     <p class="tech-skill-line">
       HTML/CSS
@@ -432,11 +440,14 @@
 
       <section class="my-projects spacer" id="my-projects">
   <div class="container">
-    <h2 class="my-projects-title">
-      My <span class="my-projects-text-accent">projects</span>
+    <h2 class="my-projects-title" data-aos="fade-up">
+      My <span class="green-text">projects</span>
     </h2>
     <ul class="my-projects-list js-my-projects-list">
-      <li class="my-projects-list-item js-my-projects-list-item">
+      <li
+        class="my-projects-list-item js-my-projects-list-item"
+        data-aos="fade-up"
+      >
         <img
           class="my-projects-img"
           srcset="/portfolio/assets/my-projects-img--mobile--1-3c02f1ee.jpg 320w, /portfolio/assets/my-projects-img--mobile--1@2x-dba10959.jpg 640w, /portfolio/assets/my-projects-img--tablet--1-bf6e6304.jpg 704w, /portfolio/assets/my-projects-img--tablet--1@2x-70237bb9.jpg 1408w, /portfolio/assets/my-projects-img--desktop--1-e6ce6ef4.jpg 1008w, /portfolio/assets/my-projects-img--desktop--1@2x-dd987580.jpg 2016w"
@@ -464,7 +475,10 @@
           </a>
         </div>
       </li>
-      <li class="my-projects-list-item js-my-projects-list-item">
+      <li
+        class="my-projects-list-item js-my-projects-list-item"
+        data-aos="fade-up"
+      >
         <img
           class="my-projects-img"
           srcset="/portfolio/assets/my-projects-img--mobile--2-0eeeea28.jpg 320w, /portfolio/assets/my-projects-img--mobile--2@2x-b0d311dc.jpg 640w, /portfolio/assets/my-projects-img--tablet--2-1e4457bd.jpg 704w, /portfolio/assets/my-projects-img--tablet--2@2x-68e63fd8.jpg 1408w, /portfolio/assets/my-projects-img--desktop--2-15df5ba6.jpg 1008w, /portfolio/assets/my-projects-img--desktop--2@2x-1cc65f38.jpg 2016w"
@@ -492,7 +506,10 @@
           </a>
         </div>
       </li>
-      <li class="my-projects-list-item js-my-projects-list-item">
+      <li
+        class="my-projects-list-item js-my-projects-list-item"
+        data-aos="fade-up"
+      >
         <img
           class="my-projects-img"
           srcset="/portfolio/assets/my-projects-img--mobile--3-c40f39a1.jpg 320w, /portfolio/assets/my-projects-img--mobile--3@2x-f07e2339.jpg 640w, /portfolio/assets/my-projects-img--tablet--3-9fb47d48.jpg 704w, /portfolio/assets/my-projects-img--tablet--3@2x-4045df70.jpg 1408w, /portfolio/assets/my-projects-img--desktop--3-686e0617.jpg 1008w, /portfolio/assets/my-projects-img--desktop--3@2x-554f5044.jpg 2016w"
@@ -525,6 +542,7 @@
       <button
         class="my-projects-load-more-btn js-my-projects-load-more-btn"
         type="button"
+        data-aos="fade-up"
       >
         <span class="my-projects-load-more-btn-text">Load more</span>
       </button>
@@ -533,62 +551,74 @@
 </section>
 
       <section id="benefits" class="spacer">
-    <div class="container">
-        <div class="background-benefits"></div>
-        <h2 class="title-benefits"><span class="span-benefits">benefits</span> of working with me</h2>
-        <div class="benefits-common">
-            <div class="benefits-width">
-                <div class="icon-benefits">
-                    <svg class="icon-color" width="24" height="24">
-                        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-user"></use>
-                    </svg>
-                </div>
-                <h3 class="item-benefits">Expertise</h3>
-                <p class="text-benefits">With extensive experience in development, I have a deep understanding of programming and website development.</p>
-            </div>
-            <div class="benefits-width">
-                <div class="icon-benefits">
-                    <svg class="icon-color" width="24" height="24">
-                        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-chat"></use>
-                    </svg>
-                </div>
-                <h3 class="item-benefits">Communication</h3>
-                <p class="text-benefits">Understanding your needs and wants is my priority and I am always available for discussions and open to corrections.</p>
-            </div>
-            <div class="benefits-width">
-                <div class="icon-benefits">
-                    <svg class="icon-color" width="24" height="24">
-                        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-brush"></use>
-                    </svg>
-                </div>
-                <h3 class="item-benefits">Art</h3>
-                <p class="text-benefits">Thanks to my creative nature, I am ready to accept challenges and help you bring your ideas to life.
-                </p>
-            </div>
-            <div class="benefits-width">
-                <div class="icon-benefits">
-                    <svg class="icon-color" width="24" height="24">
-                        <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-hourglass"></use>
-                    </svg>
-                </div>
-                <h3 class="item-benefits">Urgent execution</h3>
-                <p class="text-benefits">I understand how important time is to you. Ready to work quickly and efficiently, without reducing the quality of work.
-                </p>
-            </div>
+  <div class="container">
+    <div class="background-benefits"></div>
+    <h2 class="title-benefits" data-aos="fade-up">
+      <span class="green-text">benefits</span> of working with me
+    </h2>
+    <div class="benefits-common">
+      <div class="benefits-width" data-aos="flip-right" data-aos-delay="100">
+        <div class="icon-benefits">
+          <svg class="icon-color" width="24" height="24">
+            <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-user"></use>
+          </svg>
         </div>
+        <h3 class="item-benefits">Expertise</h3>
+        <p class="text-benefits">
+          With extensive experience in development, I have a deep understanding
+          of programming and website development.
+        </p>
+      </div>
+      <div class="benefits-width" data-aos="flip-right" data-aos-delay="200">
+        <div class="icon-benefits">
+          <svg class="icon-color" width="24" height="24">
+            <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-chat"></use>
+          </svg>
+        </div>
+        <h3 class="item-benefits">Communication</h3>
+        <p class="text-benefits">
+          Understanding your needs and wants is my priority and I am always
+          available for discussions and open to corrections.
+        </p>
+      </div>
+      <div class="benefits-width" data-aos="flip-right" data-aos-delay="300">
+        <div class="icon-benefits">
+          <svg class="icon-color" width="24" height="24">
+            <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-brush"></use>
+          </svg>
+        </div>
+        <h3 class="item-benefits">Art</h3>
+        <p class="text-benefits">
+          Thanks to my creative nature, I am ready to accept challenges and help
+          you bring your ideas to life.
+        </p>
+      </div>
+      <div class="benefits-width" data-aos="flip-right" data-aos-delay="400">
+        <div class="icon-benefits">
+          <svg class="icon-color" width="24" height="24">
+            <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-hourglass"></use>
+          </svg>
+        </div>
+        <h3 class="item-benefits">Urgent execution</h3>
+        <p class="text-benefits">
+          I understand how important time is to you. Ready to work quickly and
+          efficiently, without reducing the quality of work.
+        </p>
+      </div>
     </div>
+  </div>
 </section>
 
       <section class="spacer">
   <div class="container faq-container">
     <div class="faq-title-wrapper">
-      <h2 class="faq-title">
-        frequently asked <span class="faq-title-color">question</span>
+      <h2 class="faq-title" data-aos="fade-up">
+        frequently asked <span class="green-text">question</span>
       </h2>
     </div>
     <div class="faq-wrapper-list">
       <ul class="faq-list">
-        <li class="faq-list-item ac">
+        <li class="faq-list-item ac" data-aos="fade-up">
           <h3 class="faq-list-item-title ac-header">
             <button type="button" id="iconButtonFaq" class="ac-trigger">
               What programming languages ​​are most often used in your
@@ -606,7 +636,7 @@
           </div>
         </li>
 
-        <li class="faq-list-item ac">
+        <li class="faq-list-item ac" data-aos="fade-up">
           <h3 class="faq-list-item-title ac-header">
             <button type="button" class="ac-trigger">
               What are the deadlines for the project?
@@ -626,7 +656,7 @@
           </div>
         </li>
 
-        <li class="faq-list-item ac">
+        <li class="faq-list-item ac" data-aos="fade-up">
           <h3 class="faq-list-item-title ac-header">
             <button type="button" class="ac-trigger">
               What payment methods do you accept?
@@ -644,7 +674,7 @@
           </div>
         </li>
 
-        <li class="faq-list-item ac">
+        <li class="faq-list-item ac" data-aos="fade-up">
           <h3 class="faq-list-item-title ac-header">
             <button type="button" class="ac-trigger">
               How can I contact you?
@@ -662,7 +692,7 @@
           </div>
         </li>
 
-        <li class="faq-list-item ac">
+        <li class="faq-list-item ac" data-aos="fade-up">
           <h3 class="faq-list-item-title ac-header">
             <button type="button" class="ac-trigger">
               Do you provide advice or support?
@@ -682,7 +712,7 @@
           </div>
         </li>
 
-        <li class="faq-list-item ac">
+        <li class="faq-list-item ac" data-aos="fade-up">
           <h3 class="faq-list-item-title ac-header">
             <button type="button" class="ac-trigger">
               What does the process of developing a software product look like
@@ -708,10 +738,10 @@
 </section>
 
       <section class="reviews-section container spacer" id="reviews">
-  <h2 class="reviews-title">REVIEWS</h2>
+  <h2 class="reviews-title" data-aos="fade-up">REVIEWS</h2>
   <div class="swiper">
-    <ul class="swiper-wrapper"></ul>
-    <div class="swiper-button-wrapper">
+    <ul class="swiper-wrapper" data-aos="fade-up"></ul>
+    <div class="swiper-button-wrapper" data-aos="fade-up">
       <button class="swiper-button-prev">
         <svg class="swiper-icon-prev" width="24px" height="24px">
           <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-arrow-right"></use>
@@ -727,18 +757,21 @@
 </section>
 
       <div id="contacts" class="contacts spacer">
+  <div class="contacts-decore"></div>
+
   <div class="container">
     <div class="contacts-wrap">
-      <div class="contacts-decore"></div>
       <div class="contact-info">
-        <h2 class="">let’s <span class="green-text">work together</span></h2>
+        <h2 data-aos="fade-up">
+          let’s <span class="green-text">work together</span>
+        </h2>
 
-        <p class="caption">
+        <p class="caption" data-aos="fade-right" data-aos-delay="100">
           Contact me to transform your ideas into exceptional solutions.
         </p>
 
         <ul class="contacts-list">
-          <li class="contact-item">
+          <li class="contact-item" data-aos="fade-right" data-aos-delay="150">
             <a class="link" href="tel:+380904567890">
               <svg class="icon-phone" width="24" height="24">
                 <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-phone"></use>
@@ -746,7 +779,7 @@
               <span>+38 090 456 78 90</span>
             </a>
           </li>
-          <li class="contact-item">
+          <li class="contact-item" data-aos="fade-right" data-aos-delay="200">
             <a class="link" href="mailto:lloydjefferson@gmail.com">
               <svg class="icon-mail" width="24" height="24">
                 <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-mail"></use>
@@ -754,8 +787,12 @@
               <span>lloydjefferson@gmail.com</span>
             </a>
           </li>
-          <li class="contact-item">
-            <a class="link" href="https://maps.app.goo.gl/Ct7PuVPrGhJZiskX6" target="_blank">
+          <li class="contact-item" data-aos="fade-right" data-aos-delay="250">
+            <a
+              class="link"
+              href="https://maps.app.goo.gl/Ct7PuVPrGhJZiskX6"
+              target="_blank"
+            >
               <svg class="icon-point" width="24" height="24">
                 <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-point"></use>
               </svg>
@@ -766,9 +803,21 @@
       </div>
 
       <div class="contact-side">
-        <form id="contact_form" class="contact-form">
+        <form
+          id="contact_form"
+          class="contact-form"
+          data-aos="fade-up-left"
+          data-aos-delay="100"
+        >
           <label for="customer_email" class="email-label">
-            <input type="email" name="customer_email" id="customer_email" placeholder="Your email*" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required>
+            <input
+              type="email"
+              name="customer_email"
+              id="customer_email"
+              placeholder="Your email*"
+              pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+              required
+            />
 
             <svg class="icon-success" width="16" height="16">
               <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-success"></use>
@@ -777,9 +826,17 @@
             <span id="error_message"></span>
           </label>
 
-          <textarea name="customer_message" id="customer_message" cols="30" rows="5" placeholder="Message"></textarea>
+          <textarea
+            name="customer_message"
+            id="customer_message"
+            cols="30"
+            rows="5"
+            placeholder="Message"
+          ></textarea>
 
-          <button type="submit" id="form_submit" class="form-submit">SEND MESSAGE</button>
+          <button type="submit" id="form_submit" class="form-submit">
+            SEND MESSAGE
+          </button>
         </form>
       </div>
     </div>
@@ -798,6 +855,7 @@
     <p class="modal-message"></p>
   </div>
 </div>
+
     </main>
 
     <footer class="footer spacer">
@@ -807,11 +865,12 @@
         class="logo-footer"
         href="https://sanetchek.github.io/portfolio/"
         aria-label="Home"
+        data-aos="fade-up"
         >LLOYD<span class="green-text">JEFFERSON</span></a
       >
       <div class="footer-soc-link">
         <ul>
-          <li class="footer-link">
+          <li class="footer-link" data-aos="fade-right" data-aos-delay="100">
             <a
               href="https://www.instagram.com/goitclub/"
               target="_blank"
@@ -819,7 +878,7 @@
               >Instagram
             </a>
           </li>
-          <li class="footer-link">
+          <li class="footer-link" data-aos="fade-right" data-aos-delay="150">
             <a
               href="https://www.facebook.com/goITclub/"
               target="_blank"
@@ -827,7 +886,7 @@
               >Facebook
             </a>
           </li>
-          <li class="footer-link">
+          <li class="footer-link" data-aos="fade-right" data-aos-delay="250">
             <a
               href="https://www.linkedin.com/school/goit-start-your-career-in-it"
               target="_blank"
@@ -835,7 +894,7 @@
               >Linkedin
             </a>
           </li>
-          <li class="footer-link">
+          <li class="footer-link" data-aos="fade-right" data-aos-delay="350">
             <a
               href="https://github.com/Sanetchek/portfolio"
               target="_blank"
@@ -846,8 +905,9 @@
         </ul>
       </div>
     </div>
-
-    <p class="footer-text">© Copyright 2024. Made by LloydJefferson</p>
+    <p class="footer-text" data-aos="fade-left">
+      © Copyright 2024. Made by LloydJefferson
+    </p>
   </div>
 </footer>
 
