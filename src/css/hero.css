@@ -173,7 +173,6 @@ p.hero-text {
   .hero-content-wrapper {
     margin-bottom: 80px;
   }
-
 }
 
 /* ============= Desktop ============= */
@@ -227,5 +226,4 @@ p.hero-text {
   p.hero-text {
     max-width: 592px;
   }
-
 }

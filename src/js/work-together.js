@@ -40,7 +40,10 @@ const onContactFormSubmit = (event) => {
 
   axios.post('/requests', params)
     .then((response) => {
-      const { title, message } = response.data;
+      const {
+        title,
+        message
+      } = response.data;
       contactsModal.querySelector('.modal-title').innerHTML = title;
       contactsModal.querySelector('.modal-message').innerHTML = message;
 
@@ -77,4 +80,3 @@ function modalClose() {
   contactsModal.classList.remove('is-open');
   document.body.style.overflow = '';
 }
-

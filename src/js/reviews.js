@@ -14,8 +14,7 @@ const murkup = function (reviews) {
           <img class="swiper-image" src="${review.avatar_url}" alt="author image">
           <p class="swiper-author">${review.author}</p>
         </div>
-      </li>`
-    );
+      </li>`);
   });
   return reviewsArray.join('');
 };

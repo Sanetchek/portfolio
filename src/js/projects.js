@@ -1,3 +1,5 @@
+import AOS from 'aos';
+
 // Import sprite
 import svgSprite from '../img/sprite.svg';
 
@@ -46,8 +48,7 @@ import project_10_desktop_default from '../img/my-projects/my-projects-img--desk
 import project_10_desktop_retina from '../img/my-projects/my-projects-img--desktop--10@2x.jpg';
 
 // Define projects array
-const projects = [
-  {
+const projects = [{
     name: "Power pulse webservice",
     stack: "React, JavaScript, Node JS, Git",
     link: "https://sanetchek.github.io/portfolio/",
@@ -206,8 +207,9 @@ const onLoadMoreBtnClick = () => {
   let projectsToLoad = '';
 
   for (let i = 0; i < projectsPerPage; i++) {
-    const project = projects[ currentIndex ];
+    const project = projects[currentIndex];
     projectsToLoad += createProject(project);
+
     if (currentIndex >= projects.length - 1) {
       hideLoadMore();
       break;
@@ -216,6 +218,8 @@ const onLoadMoreBtnClick = () => {
   }
 
   listEl.insertAdjacentHTML('beforeend', projectsToLoad);
+
+  AOS.refesh();
 
   window.scrollBy({
     top: lastGalleryItemEl.getBoundingClientRect().bottom,
@@ -235,8 +239,13 @@ function getLastProjectsItemEL() {
 }
 
 function createProject(project) {
-  const { name, image, stack, link } = project;
-  return `<li class="my-projects-list-item js-my-projects-list-item">
+  const {
+    name,
+    image,
+    stack,
+    link
+  } = project;
+  return `<li class="my-projects-list-item js-my-projects-list-item" data-aos="fade-up">
       <img
         class="my-projects-img"
         srcset="

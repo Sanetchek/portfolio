@@ -2,7 +2,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 // init aos animation
-AOS.init();
+AOS.init({
+  offset: 60
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   const modeSwitcherBtn = document.getElementById('mode-switcher');
@@ -39,8 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Hide Loader when Page is load
-  const onPageLoad=()=> {
-    var loaderOverlay=document.querySelector('.loader-overlay');
+  const onPageLoad = () => {
+    var loaderOverlay = document.querySelector('.loader-overlay');
 
     if (loaderOverlay) {
       loaderOverlay.classList.add('is-hidden');
@@ -53,21 +55,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const onOpenMobileMenu = event => {
     event.preventDefault();
 
-    const headerMenuEl=document.querySelector('.header-menu');
+    const headerMenuEl = document.querySelector('.header-menu');
     headerMenuEl.classList.add('is-open');
 
-    document.body.style.overflow='hidden';
+    document.body.style.overflow = 'hidden';
   };
 
   // Event for Open Menu
   burgerBtn.addEventListener('click', onOpenMobileMenu);
 
   // Handler Close Mobile Menu on click
-  const onCloseMobileMenu=event=> {
+  const onCloseMobileMenu = event => {
     event.preventDefault();
-    const headerMenuEl=document.querySelector('.header-menu');
+    const headerMenuEl = document.querySelector('.header-menu');
     headerMenuEl.classList.remove('is-open');
-    document.body.style.overflow='inherit';
+    document.body.style.overflow = 'inherit';
   };
 
   // Event for Close Menu

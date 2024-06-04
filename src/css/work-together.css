@@ -2,6 +2,10 @@
   color: var(--green-text);
 }
 
+.contacts {
+  position: relative;
+}
+
 .contacts-wrap {
   position: relative;
   display: flex;
