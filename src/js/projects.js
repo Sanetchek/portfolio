@@ -266,11 +266,13 @@ function createProject(project) {
         src="${ image.mobile.default }"
         alt="${ name }"
         width="320"
+        height="184"
+        loading="lazy"
       />
       <div class="my-projects-stack">${ stack }</div>
       <div class="my-projects-name-link">
         <h3 class="my-projects-name">${ name }</h3>
-        <a class="my-projects-link" href="${ link }" target="_blank">
+        <a class="my-projects-link" href="${ link }" target="_blank" aria-label="Visit website" tabindex="0">
           Visit
           <svg class="my-projects-link-icon icon-arrow-up-right" width="24" height="24">
             <use href="${ svgSprite }#icon-arrow-up-right"></use>
