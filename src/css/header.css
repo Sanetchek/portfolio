@@ -225,6 +225,12 @@
   stroke: var(--light-text);
 }
 
+@media screen and (max-width: 360px) {
+  .header-navigation {
+    gap: 10px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   #header {
     height: 96px;
