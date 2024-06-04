@@ -18,15 +18,18 @@
     <script type="module" crossorigin src="/portfolio/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-82a02ed5.js">
     <link rel="stylesheet" href="/portfolio/assets/vendor-62eeb4fd.css">
-    <link rel="stylesheet" href="/portfolio/assets/index-88c075da.css">
+    <link rel="stylesheet" href="/portfolio/assets/index-af59a907.css">
   </head>
   <body>
-
     <header id="header">
   <div class="header">
     <div class="header-wrap">
       <div class="header-container">
-        <a class="logo-header" href="https://sanetchek.github.io/portfolio/"
+        <a
+          class="logo-header"
+          href="https://sanetchek.github.io/portfolio/"
+          aria-label="Home"
+          tabindex="0"
           >LLOYD<span class="green-text">JEFFERSON</span></a
         >
         <nav class="menu-nav-tabl">
@@ -37,23 +40,44 @@
           ></label>
           <ul class="menu-list">
             <li id="menu_about" class="menu-list-item">
-              <a href="#about" id="about-link" class="menu-list-link"
+              <a
+                href="#about"
+                id="about-link"
+                class="menu-list-link"
+                aria-label="About me"
+                tabindex="0"
                 >About me</a
               >
             </li>
             <li id="menu_yachts" class="menu-list-item">
-              <a href="#my-projects" id="project-link" class="menu-list-link"
+              <a
+                href="#my-projects"
+                id="project-link"
+                class="menu-list-link"
+                aria-label="Projects"
+                tabindex="0"
                 >Projects</a
               >
             </li>
             <li id="menu_review" class="menu-list-item">
-              <a href="#contacts" id="contacts-link" class="menu-list-link"
+              <a
+                href="#contacts"
+                id="contacts-link"
+                class="menu-list-link"
+                aria-label="Contacts"
+                tabindex="0"
                 >Contacts</a
               >
             </li>
           </ul>
         </nav>
-        <button type="button" class="open-menu-but" id="show-menu">
+        <button
+          type="button"
+          class="open-menu-but"
+          id="show-menu"
+          aria-label="Open Menu"
+          tabindex="0"
+        >
           <svg class="burger-icon" width="32" height="32">
             <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-menu"></use>
           </svg>
@@ -65,9 +89,19 @@
     <div class="menu-wrap">
       <div class="menu-nav-wrap">
         <div class="menu">
-          <a class="header-menu-logo" href="/portfolio/" aria-label="Home"
+          <a
+            class="header-menu-logo"
+            href="/portfolio/"
+            aria-label="Home"
+            tabindex="0"
             >LLOYD<span>JEFFERSON</span></a
-          ><button type="button" class="close-menu-but" id="close-menu">
+          ><button
+            type="button"
+            class="close-menu-but"
+            id="close-menu"
+            aria-label="Close Menu"
+            tabindex="0"
+          >
             <svg class="close-icon" width="32" height="32">
               <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-x"></use>
             </svg>
@@ -76,14 +110,24 @@
         <nav class="menu-nav">
           <ul class="menu-list">
             <li class="menu-list-item">
-              <a href="#about" class="menu-list-link menu-link-js">About me</a>
-            </li>
-            <li class="menu-list-item">
-              <a href="#my-projects" class="menu-list-link menu-link-js"
-                >Projects</a
+              <a
+                href="#about"
+                class="menu-list-link menu-link-js"
+                aria-label="About me"
+                tabindex="0"
+                >About me</a
               >
             </li>
             <li class="menu-list-item">
+              <a
+                href="#my-projects"
+                class="menu-list-link menu-link-js"
+                aria-label="Projects"
+                tabindex="0"
+                >Projects</a
+              >
+            </li>
+            <li class="menu-list-item" aria-label="Contacts" tabindex="0">
               <a href="#contacts" class="menu-list-link menu-link-js"
                 >Contacts</a
               >
@@ -100,31 +144,31 @@
       <section class="hero">
   <div class="container">
     <div class="hero-background"></div>
-    <div class="hero-text-content">
-      <h1 class="hero-title" data-aos="fade-up">
-        Hello, I am
-        <picture>
-          <source
-            srcset="/portfolio/assets/hero-dt-1x-2d872827.jpg 1x, /portfolio/assets/hero-dt-2x-4bf79994.jpg 2x"
-            media="(min-width: 1280px)"
-          />
-          <img
-            class="hero-foto"
-            src="/portfolio/assets/hero-dt-1x-2d872827.jpg"
-            alt="Lloyd Jefferson's photo"
-            width="108"
-            height="108"
-          />
-        </picture>
-        <br />
-        <span class="green-text"> Fullstack developer </span>
-      </h1>
-    </div>
+    <h1 class="hero-title" data-aos="fade-up">
+      Hello, I am
+      <picture>
+        <source
+          srcset="/portfolio/assets/hero-dt-1x-2d872827.jpg 1x, /portfolio/assets/hero-dt-2x-4bf79994.jpg 2x"
+          media="(min-width: 1280px)"
+        />
+        <img
+          class="hero-foto"
+          src="/portfolio/assets/hero-dt-1x-2d872827.jpg"
+          alt="Lloyd Jefferson's photo"
+          width="108"
+          height="108"
+          loading="lazy"
+        />
+      </picture>
+      <br />
+      <span class="green-text"> Fullstack developer </span>
+    </h1>
     <div class="hero-content-wrapper">
       <a
         href="#contacts"
         id="hero-link"
         aria-label="Hero section"
+        tabindex="0"
         class="hero-btn-wrapper"
         data-aos="fade-right"
       >
@@ -151,6 +195,7 @@
           href="https://www.instagram.com/goitclub/"
           target="_blank"
           aria-label="Instagram"
+          tabindex="0"
           >Instagram
         </a>
       </li>
@@ -159,6 +204,7 @@
           href="https://www.facebook.com/goITclub/"
           target="_blank"
           aria-label="Facebook"
+          tabindex="0"
           >Facebook
         </a>
       </li>
@@ -167,6 +213,7 @@
           href="https://www.linkedin.com/school/goit-start-your-career-in-it"
           target="_blank"
           aria-label="Linkedin"
+          tabindex="0"
           >Linkedin
         </a>
       </li>
@@ -175,6 +222,7 @@
           href="https://github.com/Sanetchek/portfolio"
           target="_blank"
           aria-label="GitHub"
+          tabindex="0"
           >GitHub
         </a>
       </li>
@@ -210,6 +258,7 @@
             alt="my photo"
             width="384"
             height="448"
+            loading="lazy"
           />
         </picture>
       </div>
@@ -455,6 +504,8 @@
           src="/portfolio/assets/my-projects-img--mobile--1-3c02f1ee.jpg"
           alt="Wallet webservice"
           width="320"
+          height="184"
+          loading="lazy"
         />
         <div class="my-projects-stack">React, JavaScript, Node JS, Git</div>
         <div class="my-projects-name-link">
@@ -462,6 +513,8 @@
           <a
             class="my-projects-link"
             href="https://sanetchek.github.io/portfolio/"
+            aria-label="Visit website"
+            tabindex="0"
             target="_blank"
           >
             Visit
@@ -486,6 +539,8 @@
           src="/portfolio/assets/my-projects-img--mobile--2-0eeeea28.jpg"
           alt="Green harvest webservice"
           width="320"
+          height="184"
+          loading="lazy"
         />
         <div class="my-projects-stack">React, JavaScript, Node JS, Git</div>
         <div class="my-projects-name-link">
@@ -493,6 +548,8 @@
           <a
             class="my-projects-link"
             href="https://sanetchek.github.io/portfolio/"
+            aria-label="Visit website"
+            tabindex="0"
             target="_blank"
           >
             Visit
@@ -517,6 +574,8 @@
           src="/portfolio/assets/my-projects-img--mobile--3-c40f39a1.jpg"
           alt="English Exellence webservice"
           width="320"
+          height="184"
+          loading="lazy"
         />
         <div class="my-projects-stack">React, JavaScript, Node JS, Git</div>
         <div class="my-projects-name-link">
@@ -524,6 +583,8 @@
           <a
             class="my-projects-link"
             href="https://sanetchek.github.io/portfolio/"
+            aria-label="Visit website"
+            tabindex="0"
             target="_blank"
           >
             Visit
@@ -542,6 +603,8 @@
       <button
         class="my-projects-load-more-btn js-my-projects-load-more-btn"
         type="button"
+        aria-label="Load More Projects"
+        tabindex="0"
         data-aos="fade-up"
       >
         <span class="my-projects-load-more-btn-text">Load more</span>
@@ -742,12 +805,16 @@
   <div class="swiper">
     <ul class="swiper-wrapper" data-aos="fade-up"></ul>
     <div class="swiper-button-wrapper" data-aos="fade-up">
-      <button class="swiper-button-prev">
+      <button
+        class="swiper-button-prev"
+        aria-label="Previous Slide"
+        tabindex="0"
+      >
         <svg class="swiper-icon-prev" width="24px" height="24px">
           <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-arrow-right"></use>
         </svg>
       </button>
-      <button class="swiper-button-next">
+      <button class="swiper-button-next" aria-label="Next Slide" tabindex="0">
         <svg class="swiper-icon-next" width="24px" height="24px">
           <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-arrow-right"></use>
         </svg>
@@ -772,7 +839,12 @@
 
         <ul class="contacts-list">
           <li class="contact-item" data-aos="fade-right" data-aos-delay="150">
-            <a class="link" href="tel:+380904567890">
+            <a
+              class="link"
+              href="tel:+380904567890"
+              aria-label="Call me"
+              tabindex="0"
+            >
               <svg class="icon-phone" width="24" height="24">
                 <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-phone"></use>
               </svg>
@@ -780,7 +852,12 @@
             </a>
           </li>
           <li class="contact-item" data-aos="fade-right" data-aos-delay="200">
-            <a class="link" href="mailto:lloydjefferson@gmail.com">
+            <a
+              class="link"
+              href="mailto:lloydjefferson@gmail.com"
+              aria-label="Email to me"
+              tabindex="0"
+            >
               <svg class="icon-mail" width="24" height="24">
                 <use href="/portfolio/assets/sprite-ed0f59e7.svg#icon-mail"></use>
               </svg>
@@ -791,6 +868,8 @@
             <a
               class="link"
               href="https://maps.app.goo.gl/Ct7PuVPrGhJZiskX6"
+              aria-label="See where you can find me"
+              tabindex="0"
               target="_blank"
             >
               <svg class="icon-point" width="24" height="24">
@@ -816,6 +895,8 @@
               id="customer_email"
               placeholder="Your email*"
               pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+              aria-label="Enter your email"
+              tabindex="0"
               required
             />
 
@@ -832,9 +913,17 @@
             cols="30"
             rows="5"
             placeholder="Message"
+            aria-label="Text me a nessage"
+            tabindex="0"
           ></textarea>
 
-          <button type="submit" id="form_submit" class="form-submit">
+          <button
+            type="submit"
+            id="form_submit"
+            class="form-submit"
+            aria-label="Send Request"
+            tabindex="0"
+          >
             SEND MESSAGE
           </button>
         </form>
@@ -865,6 +954,7 @@
         class="logo-footer"
         href="https://sanetchek.github.io/portfolio/"
         aria-label="Home"
+        tabindex="0"
         data-aos="fade-up"
         >LLOYD<span class="green-text">JEFFERSON</span></a
       >
@@ -875,6 +965,7 @@
               href="https://www.instagram.com/goitclub/"
               target="_blank"
               aria-label="Instagram"
+              tabindex="0"
               >Instagram
             </a>
           </li>
@@ -883,6 +974,7 @@
               href="https://www.facebook.com/goITclub/"
               target="_blank"
               aria-label="Facebook"
+              tabindex="0"
               >Facebook
             </a>
           </li>
@@ -891,6 +983,7 @@
               href="https://www.linkedin.com/school/goit-start-your-career-in-it"
               target="_blank"
               aria-label="Linkedin"
+              tabindex="0"
               >Linkedin
             </a>
           </li>
@@ -899,6 +992,7 @@
               href="https://github.com/Sanetchek/portfolio"
               target="_blank"
               aria-label="GitHub"
+              tabindex="0"
               >GitHub
             </a>
           </li>

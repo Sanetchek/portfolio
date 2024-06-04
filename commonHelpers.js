@@ -13,11 +13,13 @@ import{a as q,A as G,S as z,b as y,i as C}from"./assets/vendor-82a02ed5.js";(fun
         src="${o.mobile.default}"
         alt="${e}"
         width="320"
+        height="184"
+        loading="lazy"
       />
       <div class="my-projects-stack">${a}</div>
       <div class="my-projects-name-link">
         <h3 class="my-projects-name">${e}</h3>
-        <a class="my-projects-link" href="${s}" target="_blank">
+        <a class="my-projects-link" href="${s}" target="_blank" aria-label="Visit website" tabindex="0">
           Visit
           <svg class="my-projects-link-icon icon-arrow-up-right" width="24" height="24">
             <use href="${V}#icon-arrow-up-right"></use>
