@@ -14,15 +14,18 @@ const contactsModalCloseBtn = contactsModal.querySelector('.modal-close-btn');
 // Email field validation
 const onEmailInput = (event) => {
   const email = event.target;
+  const iconSuccess = document.querySelector('.icon-success');
   const errorMessage = document.getElementById('error_message');
   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
   if (!emailPattern.test(email.value)) {
     errorMessage.textContent = 'Invalid email, try again.';
     email.classList.add('input-error'); // Optional: Add a class for styling errors
+    iconSuccess.classList.remove('active');
   } else {
     errorMessage.textContent = '';
     email.classList.remove('input-error'); // Optional: Remove error class if valid
+    iconSuccess.classList.add('active');
   }
 }
 
