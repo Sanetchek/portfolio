@@ -42,6 +42,10 @@ body.dark {
   background-color: var(--dark-bg);
 }
 
+main {
+  overflow-x: hidden;
+}
+
 :focus-visible {
   outline: 2px solid var(--dark-text) !important;
   outline-offset: 2px;
@@ -136,7 +140,6 @@ img {
   padding-bottom: 3px;
   padding-left: 20px;
   padding-right: 20px;
-  overflow: hidden;
 }
 
 .visually-hidden {

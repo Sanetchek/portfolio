@@ -4,6 +4,7 @@
 
 .contacts {
   position: relative;
+  overflow: hidden;
 }
 
 .contacts-wrap {
