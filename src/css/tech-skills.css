@@ -6,27 +6,44 @@
   flex-wrap: wrap;
 }
 
-.skill-item {
+.skill-item, .skill-item-other {
   display: flex;
-  background-color: var(--light-green);
+  align-items: center;
   height: 104px;
   padding: 32px 0;
   z-index: 1;
   width: 100%;
+  overflow: hidden;
+}
+
+.skill-item {
+  background-color: var(--light-green);
 }
 
 .dark .skill-item {
   background-color: #214136;
 }
 
-.tech-skill-line {
+.marquee {
+  display: flex;
+  width: 200%;
+}
+
+.marquee p {
+  display: inline-block;
   flex-shrink: 0;
-  min-width: 100%;
   white-space: nowrap;
-  animation-name: marqueeLine;
-  animation-duration: 12s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+}
+
+.marquee-fast {
+  animation: marquee 10s linear infinite;
+}
+
+.marquee-slow {
+  animation: marquee 20s linear infinite;
+}
+
+.tech-skill-line {
   font-weight: 500;
   font-size: 32px;
   line-height: 1.05;
@@ -39,12 +56,8 @@
 }
 
 .skill-item-other {
-  display: flex;
   background-color: var(--light-grey);
-  height: 104px;
-  padding: 32px 0;
   transform: rotate(2deg);
-  width: 100%;
 }
 
 .dark .skill-item-other {
@@ -63,21 +76,16 @@
   fill: var(--light-text);
 }
 
-.skill-item-other .tech-skill-line {
-  animation-duration: 20s;
-}
-
-@keyframes marqueeLine {
-  from {
+@keyframes marquee {
+  0% {
     transform: translateX(0);
   }
-
-  to {
-    transform: translateX(-100%);
+  100% {
+    transform: translateX(-25%);
   }
 }
 
-@media screen and(min-width: 768px) {
+@media screen and (min-width: 768px) {
   .skill-item-other {
     transform: rotate(1deg);
   }
@@ -86,17 +94,12 @@
     height: 282px;
   }
 
-  .skill-item {
+  .skill-item, .skill-item-other {
     height: 128px;
     padding: 40px 0;
   }
 
   .tech-skill-line {
     font-size: 36px;
-  }
-
-  .skill-item-other {
-    height: 128px;
-    padding: 40px 0;
   }
 }
